@@ -27,7 +27,7 @@ Para Margaret A. Boden "criatividade pode ser definida como a habilidade de gera
 A programação exploratória para nós é uma estratégia de desenvolvimento de software, especialmente útil quando um problema não é muito bem compreendido ou não estão claros ainda quais algoritmos e estruturas de dados podem ser necessários, tornando possível desenvolver um programa sem ter que passar pelas restrições usuais de um ciclo de desenvolvimento mais estruturado (editar - compilar - executar - depurar). Segundo Nick Montfort ela é um "processo que permite ao programador descobrir, durante o processo da programação, a direção final do projeto".
 
 ### Programação poética 
-A [School for Poetic Computation](htte://sfpc.io/) define que "computação é poética quando a tecnologia é usada para o pensamento crítico e para a investigação estética". Analogamente, para nós, a programação poética acontece quando utilizamos a programação como meio de estimular o pensamento crítico e a investigação estética. 
+A [School for Poetic Computation](http://sfpc.io/) define que "computação é poética quando a tecnologia é usada para o pensamento crítico e para a investigação estética". Analogamente, para nós, a programação poética acontece quando utilizamos a programação como meio de estimular o pensamento crítico e a investigação estética. 
 
 ## Bibliografia
 Boden, M. A. 2004. The Creative Mind: Myths and Mechanisms, 2nd ed. London: Routledge. 

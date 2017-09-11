@@ -29,7 +29,12 @@ A programação exploratória para nós é uma estratégia de desenvolvimento de
 ### Programação poética 
 A [School for Poetic Computation](http://sfpc.io/) define que "computação é poética quando a tecnologia é usada para o pensamento crítico e para a investigação estética". Analogamente, para nós, a programação poética acontece quando utilizamos a programação como meio de estimular o pensamento crítico e a investigação estética. 
 
+### Artista-programador
+"o artista-programador é aquele que ao explorar a software arte investiga os processos de criação com foco principalmente na poética artística da reconstrução dos algoritmos. Permite-se inserir no código-fonte a sua poética, ou sobre a execução do código e as imagens e processos artísticos automaticamente gerados, ou ainda sobre o uso das linguagens de programação e a estética visual gerada na construção das interfaces computacionais, mas em qualquer abordagem o código e a construção algorítmica é [sic] parte da poética e do processo criativo da obra" (Neto 2010).
+
 ## Bibliografia
 Boden, M. A. 2004. The Creative Mind: Myths and Mechanisms, 2nd ed. London: Routledge. 
 
 Montfort, Nick. 2016. Exploratory Programming for the Arts and Humanities. MIT Press.
+
+NETO, Antonio Francisco Moreira.Software [livre] na arte computacional.2010. 111f. Dissertação (Mestrado em Arte). Instituto de Artes, Universidade de Brasília, 2010. Disponível em <http://repositorio.unb.br/handle/10482/8573>. Acesso em 11 set. 2017.

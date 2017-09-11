@@ -13,4 +13,5 @@ A [School for Poetic Computation](htte://sfpc.io/) define que "computação é p
 
 ## Bibliografia
 Boden, M. A. 2004. The Creative Mind: Myths and Mecha- nisms, 2nd ed. London: Routledge. 
+
 Montfort, Nick. 2016. Exploratory Programming for the Arts and Humanities. MIT Press.

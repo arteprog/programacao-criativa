@@ -37,4 +37,4 @@ Boden, M. A. 2004. The Creative Mind: Myths and Mechanisms, 2nd ed. London: Rout
 
 Montfort, Nick. 2016. Exploratory Programming for the Arts and Humanities. MIT Press.
 
-NETO, Antonio Francisco Moreira.Software [livre] na arte computacional.2010. 111f. Dissertação (Mestrado em Arte). Instituto de Artes, Universidade de Brasília, 2010. Disponível em <http://repositorio.unb.br/handle/10482/8573>. Acesso em 11 set. 2017.
+Neto, Antonio Francisco Moreira.Software [livre] na arte computacional.2010. 111f. Dissertação (Mestrado em Arte). Instituto de Artes, Universidade de Brasília, 2010. Disponível em <http://repositorio.unb.br/handle/10482/8573>. Acesso em 11 set. 2017.

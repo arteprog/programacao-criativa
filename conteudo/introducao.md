@@ -30,6 +30,6 @@ A programação exploratória para nós é uma estratégia de desenvolvimento de
 A [School for Poetic Computation](htte://sfpc.io/) define que "computação é poética quando a tecnologia é usada para o pensamento crítico e para a investigação estética". Analogamente, para nós, a programação poética acontece quando utilizamos a programação como meio de estimular o pensamento crítico e a investigação estética. 
 
 ## Bibliografia
-Boden, M. A. 2004. The Creative Mind: Myths and Mecha- nisms, 2nd ed. London: Routledge. 
+Boden, M. A. 2004. The Creative Mind: Myths and Mechanisms, 2nd ed. London: Routledge. 
 
 Montfort, Nick. 2016. Exploratory Programming for the Arts and Humanities. MIT Press.

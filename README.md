@@ -1,4 +1,4 @@
-# Programaço Criativa
+# Programação Criativa
 
 O curso introdutório Programação Criativa, visa promover a familiarização dos participantes com a arte computacional por meio de aulas práticas, usando Processing, plataforma de programação em código aberto amplamente utilizada por artistas, assim como estimular a reflexão a partir da análise de obras e leituras sobre o assunto. 
 

@@ -19,7 +19,7 @@
 
 > 1, 4
 
-"Escrever em uma linguagem humana permite ao autor utilizar a ambiguidade das palavras e ter uma grande flexibilidade na construção de frases. Essas técnicas permitem múltiplas interpretações de um único texto e dão a cada autor uma voz única. Cada programa de computador também revela o estilo de seu autor, mas há muito menos espaço para a ambiguidade."(Casey e McWilliams 2010).
+"Escrever em uma linguagem humana permite ao autor utilizar a ambiguidade das palavras e ter uma grande flexibilidade na construção de frases. Essas técnicas permitem múltiplas interpretações de um único texto e dão a cada autor uma voz única. Cada programa de computador também revela o estilo de seu autor, mas há muito menos espaço para a ambiguidade (Casey e Fry 2007).
 
 ## Coordenadas
 
@@ -71,4 +71,4 @@ podem ter várias linhas e terminam com asterisco-e-barra */
 
 ## Bibliografia
 
-Reas, Casey e McWilliams. 2010. FORM+CODE in design, art and architecture. New York: Princeton Architectural Press.
+Casey Reas and Ben Fry. 2007. Processing: A Programming Handbook for Visual Designers and Artists.Cambridge: MIT Press.

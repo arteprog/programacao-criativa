@@ -22,6 +22,9 @@
 "Escrever em uma linguagem humana permite ao autor utilizar a ambiguidade das palavras e ter uma grande flexibilidade na construção de frases. Essas técnicas permitem múltiplas interpretações de um único texto e dão a cada autor uma voz única. Cada programa de computador também revela o estilo de seu autor, mas há muito menos espaço para a ambiguidade."(Casey e McWilliams 2010).
 
 ## Coordenadas
+
+O computador precisa saber a posição de cada ponto que desenha. Para fazer isso, normalmente usamos coordenadas cartesianas: um eixo x corre da esquerda para a direita, e o eixo y vai de cima para baixo. Esses eixos nos permitem especificar uma posição precisa na grade usando um par de números, normalmente o valor x seguido pelo valor y. Por exemplo, um ponto em (5, 14) é 5 linhas a partir da borda esquerda da tela e 14 linhas para baixo do topo.
+
 ![coor](https://lh4.googleusercontent.com/3h-CHADOSE3UxUoInnlaclsdaojVzfdyloCy1UKfYu_SPKKKp0msuW3LzZCH70x-ok5jcgwqhpEE8Hw=w1267-h627-rw)
 
 ## Tamanho

@@ -34,6 +34,8 @@ No Mac OS é praticamente a mesma coisa, e no Linux, abra um terminal na pasta d
 
 ## Exemplos de projetos criados com Processing
 
+[{Software} Structures, por Casey Reas e outros](http://artport.whitney.org/commissions/softwarestructures/map.html)
+
 [Process Compendium, por Casey Reas](https://vimeo.com/22955812)
 
 [City Symphonies, por Mark McKeague](http://markmckeague.com/work/city-symphonies/)

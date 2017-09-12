@@ -35,6 +35,11 @@ println(height); // escreve no console altura atual da tela
 ``` 
 
 ## Formas
+
+>Ponto é o que não tem partes, não tem grandeza alguma. Linha é o comprimento sem largura. Superfície é o que tem comprimento e largura. >As extremidades da linha são pontos. As extremidades da superfície são linhas. (Euclides c. 300 AC)
+
+>A linha é o rastro deixado pelo ponto em movimento. (Wassily Kandinsky 1866-1944)
+
 ```java
 rect(20, 10, 40, 80); // retângulo rect(x, y, largura, altura)
 ellipse(10, 20, 50, 50); // oval, ellipse(x, y, largura, altura)

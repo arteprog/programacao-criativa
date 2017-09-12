@@ -23,5 +23,5 @@ O curso introdutório Programação Criativa, visa promover a familiarização
 
 ## Conteúdo
 
-1. [Introdução](programacao-criativa/conteudo/introducao.md)
-2. [Desenho Básico](programacao-criativa/conteudo/desenho-basico.md)
+1. [Introdução](/conteudo/introducao.md)
+2. [Desenho Básico](/conteudo/desenho-basico.md)

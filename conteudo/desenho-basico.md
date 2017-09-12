@@ -19,6 +19,8 @@
 
 > 1, 4
 
+3. Debate
+
 "Escrever em uma linguagem humana permite ao autor utilizar a ambiguidade das palavras e ter uma grande flexibilidade na construção de frases. Essas técnicas permitem múltiplas interpretações de um único texto e dão a cada autor uma voz única. Cada programa de computador também revela o estilo de seu autor, mas há muito menos espaço para a ambiguidade (Casey e Fry 2007).
 
 ## Coordenadas

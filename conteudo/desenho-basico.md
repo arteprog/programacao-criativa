@@ -7,17 +7,12 @@
 
 ![a](https://lh4.googleusercontent.com/bgzgCX82iGyXke7z_kd_N6dlZULrmeDuuTLkTKTRIc2SDDaem-l1ksiehYLUZXWzIjnN9MYA33YkmVk=w1267-h627)
 
-1, 3, 1
-
-4, 1
-
-1, 4
-
-0, 1, 3, 1
-
-0, 1, 3, 1
-
-1, 4
+> 1, 3, 1
+> 4, 1
+> 1, 4
+> 0, 1, 3, 1
+> 0, 1, 3, 1
+> 1, 4
 
 "Escrever em uma linguagem humana permite ao autor utilizar a ambiguidade das palavras e ter uma grande flexibilidade na construção de frases. Essas técnicas permitem múltiplas interpretações de um único texto e dão a cada autor uma voz única. Cada programa de computador também revela o estilo de seu autor, mas há muito menos espaço para a ambiguidade."(Casey e McWilliams 2010).
 

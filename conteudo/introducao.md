@@ -1,7 +1,21 @@
 # Introdução
 
+## O que é código? O que é algoritmo? 
 
-## O que é o Processing? Instalação, configuração, ambiente e referências
+Um código pode ter três objetivos: comunicar (código Morse), instruir (DNA) e ofuscar (criptografia).
+
+No contexto deste curso nos interessa o código, também conhecido como algoritmo ou programa, que define instruções passo a passo a serem executadas. Na programação, o código (também chamado de código-fonte) é usado para controlar as operações de um computador. É um algoritmo escrito em uma linguagem de programação. Um algoritmo possui algumas características como (Reas, McWilliams 2010):
+
+1. Há muitas maneiras de escrever um algoritmo.
+
+2. Um algoritmo requer pressupostos.
+
+3. Um algoritmo inclui decisões.
+
+4. Um algoritmo complexo deve ser dividido em peças modulares.
+
+
+## O que é o Processing? Instalação e configuração
 
 [**Processing**](http://processsing.org) é uma plataforma livre/aberta de programação criada em 2001 por Casey Reas e Ben Fry, largamente utilizada por artistas e para o ensino de programação num contexto visual. O Processing IDE (da sigla em inglês para ambiente integrado de desenvolvimento) é tudo o que você precisa para começar a programar produzindo resultados visuais e pode ser baixado em processing.org.
 
@@ -38,3 +52,5 @@ Boden, M. A. 2004. The Creative Mind: Myths and Mechanisms, 2nd ed. London: Rout
 Montfort, Nick. 2016. Exploratory Programming for the Arts and Humanities. MIT Press.
 
 Neto, Antonio Francisco Moreira.Software [livre] na arte computacional.2010. 111f. Dissertação (Mestrado em Arte). Instituto de Artes, Universidade de Brasília, 2010. Disponível em <http://repositorio.unb.br/handle/10482/8573>. Acesso em 11 set. 2017.
+
+Reas, Casey e McWilliams. 2010. FORM+CODE in design, art and architecture. New York: Princeton Architectural Press.

@@ -45,6 +45,8 @@ println(height); // escreve no console altura atual da tela
 
 >A linha é o rastro deixado pelo ponto em movimento. (Wassily Kandinsky 1866-1944)
 
+>No entanto, um ponto é simplesmente um pixel na tela, uma linha é uma seqüência de pixels, e uma forma é uma área de pixels. (Kostas Terzdis 1962- )
+
 ```java
 rect(20, 10, 40, 80); // retângulo rect(x, y, largura, altura)
 ellipse(10, 20, 50, 50); // oval, ellipse(x, y, largura, altura)

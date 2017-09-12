@@ -20,3 +20,8 @@ O curso introdutório Programação Criativa, visa promover a familiarização
 6. Desenvolver projetos artísticos;
 7. Debater coletivamente o conteúdo dos encontros;
 8. Documentar e compartilhar material desenvolvido pelos participantes.
+
+## Conteúdo
+
+1. [Introdução](programacao-criativa/conteudo/introducao.md)
+2. [Desenho Básico](programacao-criativa/conteudo/desenho-basico.md)

@@ -33,8 +33,8 @@ background(0, 255, 0) // fundo verde, limpa a tela background(R, G, B)
 
 ## Comentários
 ```java
-/* Comentários são anotações do código, não são executados, e quando começam com barra-e-asterisco podem ter várias linhas 
-e terminam com asterisco-e-barra */
+/* Comentários são anotações do código, não são executados, e quando começam com barra-e-asterisco
+podem ter várias linhas e terminam com asterisco-e-barra */
 
 // Comentários de uma linha só começam com duas barras. São um jeito rápido de desativar uma linha!
 

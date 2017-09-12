@@ -1,6 +1,9 @@
 # Desenho Básico
 
-## Atividade 01
+## Atividade 01 - Representação de imagens 
+
+Atividade baseada no projeto [CS Unplugged](http://csunplugged.org/).
+
 1. Desenhe no centro do papel a letra a;
 
 2. Agora vamos usar um papel quadriculado. Cada quadrado será representado por um número.

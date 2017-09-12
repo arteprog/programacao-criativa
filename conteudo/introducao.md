@@ -32,6 +32,12 @@ Saiba que não há um instalador, basta descomprimir, mova a pasta como um todo 
 
 No Mac OS é praticamente a mesma coisa, e no Linux, abra um terminal na pasta do Processing e digite *./processing*
 
+## Exemplos de projetos criados com Processing
+
+[Process Compendium, por Casey Reas](https://vimeo.com/22955812)
+
+[City Symphonies, por Mark McKeague](http://markmckeague.com/work/city-symphonies/)
+
 ## Conceitos essenciais
 
 ### Programação criativa

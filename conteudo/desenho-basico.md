@@ -52,6 +52,18 @@ line(10,10, 50,50); // linha line(x1, y1, x2, y2)
 point(100, 50); // ponto point(x, y)
 ```
 
+## Atividade 2 
+
+Pesquisar nas [referências do Processing](https://processing.org/reference/), a sintaxe para desenhar os objetos geométricos abaixo:
+
+1. Arco - arc();
+
+2. Curva - curve();
+
+3. Bezier - bezier();
+
+4. Vertex - vertex();
+
 ## Cor
 ```java
 fill(255, 0, 0, 100); // preenchimento vermelho (R:Vermelho, G:Verde, B:Azul, Alpha:Transparência)

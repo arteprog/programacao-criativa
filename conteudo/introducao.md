@@ -40,6 +40,8 @@ No Mac OS é praticamente a mesma coisa, e no Linux, abra um terminal na pasta d
 
 [City Symphonies, por Mark McKeague](http://markmckeague.com/work/city-symphonies/)
 
+[Necessary Disorder](https://necessary-disorder.tumblr.com/bio)
+
 ## Conceitos essenciais
 
 ### Programação criativa

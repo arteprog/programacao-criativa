@@ -8,7 +8,7 @@ Atividade baseada no projeto [CS Unplugged](http://csunplugged.org/).
 
 2. Agora vamos usar um papel quadriculado. Cada quadrado será representado por um número.
 
-![a](assets/imagens/a.png)
+![a](/assets/imagens/a.png)
 
 > 1, 3, 1
 
@@ -30,7 +30,7 @@ Atividade baseada no projeto [CS Unplugged](http://csunplugged.org/).
 
 O computador precisa saber a posição de cada ponto que desenha. Para fazer isso, normalmente usamos coordenadas cartesianas: um eixo x corre da esquerda para a direita, e o eixo y vai de cima para baixo. Esses eixos nos permitem especificar uma posição precisa na grade usando um par de números, normalmente o valor x seguido pelo valor y. Por exemplo, um ponto em (5, 14) é 5 linhas a partir da borda esquerda da tela e 14 linhas para baixo do topo.
 
-![coor](assets/imagens/coord.jpg)
+![coor](/assets/imagens/coord.jpg)
 
 ## Tamanho
 ```java

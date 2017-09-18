@@ -7,7 +7,7 @@
 
 ## Sintaxe if/else
 
-```java
+```pde
  if (condição) {  // a condição é avaliada como verdadeira ou falsa
                  // Se verdadeira, então... bloco de código a ser executado;
  } else {         // termina o “Então” e opcionalmente começa o “Senão”

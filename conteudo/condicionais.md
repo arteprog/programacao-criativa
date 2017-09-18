@@ -15,19 +15,29 @@
  }                // termina o bloco do “Senão”    
  
 ``` 
+
 ## Exemplos
 
 ```pde
+void setup(){
+  size(500, 500);
+}
+
+void draw(){
+  if (mousePressed) {                    // “SE” a o mouse estiver pressionado
+     ellipse(mouseX, mouseY, 40, 40);    // ENTÃO desenha um círculo na posição do mouse
+  }                                      // termina o “SE”
+
   if (mouseY<100) { // SE a posição Y do mouse menor que 100 (perto do topo da tela)
     fill(255);      // ENTÃO preenchimento branco
   } else {          // termina o “SE” e começa o “SENÃO”
     fill(100);      // preenchimento cinza 100
   }                 // termina o “SENÃO”    
- 
 
-  if (mousePressed) {        // “SE” a o mouse estiver pressionado
-     ellipse(mouseX, mouseY, 40, 40);    // ENTÃO desenha um círculo na posição do mouse
-  }                    // termina o “SE”
+  if (keyPressed && key == 'a') {
+    background(128);
+  }
+}
 ```
 
 ## Bibliografia

@@ -7,14 +7,16 @@
 
 ## Sintaxe if/else
 
+```pde
  if (condição) {  // a condição é avaliada como verdadeira ou falsa
                  // Se verdadera, então... bloco de código a ser executado;
  } else {         // termina o “Então” e opcionalmente começa o “Senão”
                  // Bloco opcional de código a ser executado se a condição for falsa;
  }                // termina o bloco do “Senão”    
- 
+``` 
 ## Exemplos
 
+```pde
   if (mouseY<100) { // SE a posição Y do mouse menor que 100 (perto do topo da tela)
     fill(255);      // ENTÃO preenchimento branco
   } else {          // termina o “SE” e começa o “SENÃO”
@@ -25,6 +27,7 @@
   if (mousePressed) {        // “SE” a o mouse estiver pressionado
      ellipse(mouseX, mouseY, 40, 40);    // ENTÃO desenha um círculo na posição do mouse
   }                    // termina o “SE”
+```
 
 ## Bibliografia
 

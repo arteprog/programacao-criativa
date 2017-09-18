@@ -6,6 +6,10 @@ Oficialmente o termo **arte interativa** surge em 1990 como uma categoria do [Pr
 
 > "Os participantes do sistema interativo "Videoplace" de Myron Krueger são identificados por uma câmera de vídeo em tempo real. A imagem é analizada como uma "sombra" na tela. Cada participante (shadowpeople) agora pode interagir com objetos fornecidos pelo sistema de computador e outras pessoas de sombra. O sistema "Videoplace" percebe um ou mais participantes e responde aos seus movimentos em tempo real." (Myron W. Krueger)
 
+![videoplace](/assets/imagens/videoplace.png)
+
+**Videoplace, 1970 – 90**
+
 Porém, a idéia de **arte participativa** é anterior. Em 1957, Marcel Duchamp apresenta em Houston, Texas, em uma reunião da American Federation of the Arts, o texto [O ato criador](/assets/referencias/creative-act.pdf) onde ele aborda dois importantes polos da criação artística - o autor e o espectator. Ele também apresenta o conceito de coeficiente artístico.
 
 O **coeficiente artístico** refere-se a discrepância entre a intenção do artista e a realização da obra, é a relação entre o que não está expressado mas foi intencionado e o que está expressado mas não foi intencionado. "O ato criador não é executado pelo artista sozinho; o público estabelece o contato entre a obra de arte e o mundo exterior, decifrando e interpretando suas qualidades intrínsecas e, desta forma, acrescenta sua contribuição ao ato criador. (Duchamp 1965)". Recentemente, Stephen Wright, no [Toward a Lexicon of Usership](/assets/referencias/toward-a-lexicon-of-usership.pdf), revisitou o conceito de coeficiciente artístico.

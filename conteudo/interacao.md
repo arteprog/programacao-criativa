@@ -1,4 +1,4 @@
-# Participação e interação na arte.
+# Participação e interação na arte
 
 ## Contexto da arte participativa e interativa
 

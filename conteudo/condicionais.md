@@ -12,13 +12,11 @@
                  // Se verdadeira, então... bloco de código a ser executado;
  } else {         // termina o “Então” e opcionalmente começa o “Senão”
                  // Bloco opcional de código a ser executado se a condição for falsa;
- }                // termina o bloco do “Senão”    
-``` 
-
+ }                // termina o bloco do “Senão”  ``` 
 
 ## Exemplos
 
-``` java
+ ``` pde
 void setup(){
   size(500, 500);
 }

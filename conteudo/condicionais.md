@@ -2,6 +2,8 @@
 
 ## As bifurcações no caminho de execução do código
 
+![condicional](/assets/imagens/condicional.jpg)
+
 *Se* está chovendo (a condição de chuva é verdadeira) *então* eu levo meu guarda-chuva.
 
 Opcionalmente, *senão* (se a condição de chuva é falsa) eu levo meus óculos de sol.

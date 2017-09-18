@@ -3,7 +3,8 @@
 ## As bifurcações no caminho de execução do código
 
 *Se* está chovendo (a condição de chuva é verdadeira) *então* eu levo meu guarda-chuva.
-(opcionalmente, *senão* (se a condição de chuva é falsa) eu levo meus óculos de sol)
+
+Opcionalmente, *senão* (se a condição de chuva é falsa) eu levo meus óculos de sol.
 
 ## Sintaxe if/else
 
@@ -17,14 +18,16 @@ if (condição) {  // a condição é avaliada como verdadeira ou falsa
 
 ## Exemplos
 
+![exemplo1](../assets/images/condicional1.png)
+
 ``` pde
 void setup(){
-  size(500, 500);
+  size(200, 200);
 }
 
 void draw(){
   if (mousePressed) {                 // "Se" o mouse estiver pressionado
-     ellipse(mouseX, mouseY, 40, 40); // ENTÃO desenha um círculo na posição do mouse
+     ellipse(mouseX, mouseY, 10, 10); // ENTÃO desenha um círculo na posição do mouse
   }                                   // termina o “Se”
 
   if (mouseY<100) { // Se a posição Y do mouse menor que 100 (perto do topo da tela)
@@ -38,6 +41,8 @@ void draw(){
   }
 }
 ```
+
+
 
 ## Bibliografia
 

@@ -18,7 +18,7 @@ if (condição) {  // a condição é avaliada como verdadeira ou falsa
 
 ## Exemplos
 
-![exemplo1](../assets/images/condicional1.png)
+![exemplo1](/assets/images/condicional1.png)
 
 ``` pde
 void setup(){

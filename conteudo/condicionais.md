@@ -2,17 +2,18 @@
 
 ## As bifurcações no caminho de execução do código
 
-**Se** está chovendo (a condição de chuva é verdadeira) **então** eu levo meu guarda-chuva.
-(opcionalmente, *senão* (se a condiço de chuva é falsa) eu levo meus óculos de sol)
+*Se* está chovendo (a condição de chuva é verdadeira) *então* eu levo meu guarda-chuva.
+(opcionalmente, *senão* (se a condição de chuva é falsa) eu levo meus óculos de sol)
 
 ## Sintaxe if/else
 
-```pde
+```java
  if (condição) {  // a condição é avaliada como verdadeira ou falsa
                  // Se verdadera, então... bloco de código a ser executado;
  } else {         // termina o “Então” e opcionalmente começa o “Senão”
                  // Bloco opcional de código a ser executado se a condição for falsa;
  }                // termina o bloco do “Senão”    
+ 
 ``` 
 ## Exemplos
 

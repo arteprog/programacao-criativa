@@ -9,11 +9,10 @@
 
 ```java
  if (condição) {  // a condição é avaliada como verdadeira ou falsa
-                 // Se verdadera, então... bloco de código a ser executado;
+                 // Se verdadeira, então... bloco de código a ser executado;
  } else {         // termina o “Então” e opcionalmente começa o “Senão”
                  // Bloco opcional de código a ser executado se a condição for falsa;
  }                // termina o bloco do “Senão”    
- 
 ``` 
 
 ## Exemplos
@@ -24,18 +23,18 @@ void setup(){
 }
 
 void draw(){
-  if (mousePressed) {                    // “SE” a o mouse estiver pressionado
-     ellipse(mouseX, mouseY, 40, 40);    // ENTÃO desenha um círculo na posição do mouse
-  }                                      // termina o “SE”
+  if (mousePressed) {                 // "Se" o mouse estiver pressionado
+     ellipse(mouseX, mouseY, 40, 40); // ENTÃO desenha um círculo na posição do mouse
+  }                                   // termina o “Se”
 
-  if (mouseY<100) { // SE a posição Y do mouse menor que 100 (perto do topo da tela)
-    fill(255);      // ENTÃO preenchimento branco
-  } else {          // termina o “SE” e começa o “SENÃO”
+  if (mouseY<100) { // Se a posição Y do mouse menor que 100 (perto do topo da tela)
+    fill(255);      // "Então" preenchimento branco
+  } else {          // termina o “Então” e começa o “Senão”
     fill(100);      // preenchimento cinza 100
-  }                 // termina o “SENÃO”    
+  }                 // termina o “Senão”    
 
-  if (keyPressed && key == 'a') {
-    background(128);
+  if (keyPressed && key == 'a') { // Se uma tecla foi precionada E (&&) a tecla foi o caractere 'a'
+    background(200);              // Apague a tela com um fundo cinza
   }
 }
 ```

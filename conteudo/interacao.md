@@ -10,7 +10,7 @@ O **coeficiente artístico** refere-se a discrepância entre a intenção do art
 
 Em 1962, é criado por George Maciunaso o movimento coletivo, artístico e cultural FLUXUS. Com influência do dadaísmo, trouxe a filosofia zen-budista, o happening e o entrecruzamento de linguagens para a arte - multimídia. 
 
-O termo **arte conceitual** foi usado pela primeira vez num texto de Henry Flynt, em 1961. Nesse texto, Flynt defende que o conceito é a matéria da arte. O mais importante para a arte conceitual são as idéias, a execução da obra fica em segundo plano e tem pouca relevância
+O termo **arte conceitual** foi usado pela primeira vez num texto de [Henry Flynt](/assets/referencias/essay-concept-art.pdf), em 1961. Nesse texto, Flynt defende que o conceito é a matéria da arte. O mais importante para a arte conceitual são as idéias, a execução da obra fica em segundo plano e tem pouca relevância
 
 ## Bibliografia
 

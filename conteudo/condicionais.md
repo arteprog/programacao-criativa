@@ -46,4 +46,4 @@ void draw(){
 
 ## Bibliografia
 
-Casey Reas and Ben Fry. 2007. Processing: A Programming Handbook for Visual Designers and Artists.Cambridge: MIT Press.
+Casey Reas and Ben Fry. 2007. Processing: A Programming Handbook for Visual Designers and Artists. Cambridge: MIT Press.

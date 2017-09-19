@@ -11,19 +11,19 @@ Opcionalmente, *senão* (se a condição de chuva é falsa), uma outra ação é
 ![condicional](/assets/imagens/condicional-com-else.jpg)
 
 ``` java
-if (chovendo) {         // a condição 'chovendo' é avaliada como verdadeira ou falsa
-   levarGuardaChuva();  // Se verdadeira a condição, então... bloco de código a ser executado;
-} else {                // termina o “então” e opcionalmente começa o “senão”
-   levarOculos();       // Bloco opcional de código a ser executado se a condição for falsa;
-}                       // termina o bloco do “senão”, continua o passeio.
+if (chovendo) {        // a condição 'chovendo' é avaliada como verdadeira ou falsa
+  levarGuardaChuva();  // Se verdadeira a condição, então... bloco de código a ser executado;
+} else {               // termina o “então” e opcionalmente começa o “senão”
+  levarOculos();       // Bloco opcional de código a ser executado se a condição for falsa;
+}                      // termina o bloco do “senão”, continua o passeio.
 ```
 
 ![condicional](/assets/imagens/condicional-sem-else.jpg)
 
 ``` java
-if (chovendo) {  // a condição 'chovendo' é avaliada como verdadeira ou falsa
-                 // Se verdadeira a condição, então... bloco de código a ser executado;
-}                // termina o bloco do “se/então”, continua o passeio.
+if (chovendo) {        // a condição 'chovendo' é avaliada como verdadeira ou falsa
+  levarGuardaChuva();  // Se verdadeira a condição, então... bloco de código a ser executado;
+}                      // termina o bloco do “se/então”, continua o passeio.
 ```
 
 ## Exemplos
@@ -53,14 +53,17 @@ void draw(){
 ```
 ## Os operadores lógicos
 
-| > | op1 > op2 |
-| >= | op1 >= op2 |
-| < | op1 < op2 |
-| <= | op1 <= op2 |
-| == | op1 == op2 |
-| != | op1 != op2 |
-| && | op1 && op2 |
-| || | op1 || op2 |
+|operador | uso | descriçãp |
+|-  |- |
+| > | e1 > e2 |
+| >= | e1 >= e2 |
+| < | e1 < e2 |
+| <= | e1 <= e2 |
+| == | e1 == e2 |
+| != | e1 != e2 |
+| && | e1 && e2 |
+| /|/| | e1 |/| e2 |
+---
 
 ## Bibliografia
 

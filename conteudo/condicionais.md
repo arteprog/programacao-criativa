@@ -53,18 +53,19 @@ void draw(){
 ```
 ## Os operadores lógicos
 
+Os valores *true* (verdadeiro) e *false* (falso) são do tipo *boolean* (Booleanos, em homenagem a [George Boole](https://pt.wikipedia.org/wiki/George_Boole)), podem ser acessados por meio de variáveis de sistema (como *mousePressed*) e são também o resultado de uma série de operações de comparação assim como as chamadas operações lógicas E (&&), OU (||) e NÃO (
 
-|operador | uso |
-|---  |---- |
-| > | e1 > e2 |
-| >= | e1 >= e2 |
+|operador | uso | descrição |
+|---  |---- |--- |
+| > | e1 > e2 |  verdadeiro se *e1* maior que *e2* |
+| >= | e1 >= e2 | 
 | < | e1 < e2 |
 | <= | e1 <= e2 |
 | == | e1 == e2 |
 | != | e1 != e2 |
 | && | e1 && e2 |
-| /|/| | e1 |/| e2 |
----
+| \|\| | e1 \|\| e2 | verrdadeiro se *e1* OU *e2* for verdadeiro |
+| ! | !e1 | se *e1* for verdadeiro, avalia falso e vice-versa |
 
 ## Bibliografia
 

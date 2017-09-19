@@ -44,7 +44,7 @@ void draw(){
 
   if (mousePressed) {                 // Se o mouse estiver pressionado
      ellipse(mouseX, mouseY, 10, 10); // Então desenha um círculo na posição do mouse
-  }                                   // termina o bloco (repare que no faz nada se o mouse estiver solto)
+  }                                   // termina o bloco (repare que não faz nada se o mouse estiver solto)
 
   if (keyPressed && key == 'a') { // Se uma tecla foi precionada E (&&) a tecla foi o caractere 'a'
     background(200);              // Apague a tela com um fundo cinza (só executa sob as condições acima)
@@ -54,21 +54,21 @@ void draw(){
 
 ## Comparações e operadores lógicos
 
-Os valores *true* (verdadeiro) e *false* (falso) são o resultado das comparações e das chamadas operações lógicas **e** (&&), **ou** (||) e **não** (!). Podem ser armazenados em variáveis do tipo *boolean* (Booleano, em homenagem a [George Boole](https://pt.wikipedia.org/wiki/George_Boole)) definidas pela pessoa que criou o programa, representando um *estado*.
+Os valores `true` (verdadeiro) e `false` (falso) são o resultado das comparações e das chamadas operações lógicas **e** (`&&`), **ou** (`||`) e **não** (`!`). Podem ser armazenados em variáveis do tipo *boolean* (Booleano, em homenagem a [George Boole](https://pt.wikipedia.org/wiki/George_Boole)) definidas pela pessoa que criou o programa, representando um *estado*.
 
 Da mesma forma, são os valores acessados quando usamos as variáveis de sistema *mousePressed* e *keyPressed*.
  
 |operador | uso | descrição |
 |:---:  |:---: |--- |
-| > | e1 > e2 |  verdadeiro se *e1* **maior** que *e2* |
-| >= | e1 >= e2 | verdadeiro se *e1* **maior ou igual** a *e2* |
-| < | e1 < e2 | verdadeiro se *e1* **menor** que *e2* |
-| <= | e1 <= e2 | verdadeiro se *e1* **menor ou igual** a *e2* |
-| == | e1 == e2 | verdadeiro se *e1* **igual** a *e2* |
-| != | e1 != e2 | verdadeiro se *e1* **diferente** de *e2* |
-| && | e1 && e2 | verdadeiro se *e1* **e** *e2* forem ambos verdadeiros |
-| \|\| | e1 \|\| e2 | verrdadeiro se *e1* **ou** *e2* forem verdadeiros |
-| ! | !e1 | **não** *e1* verdadeiro resulta falso, e **não** *e1* falso resulta verdadeiro |
+| `>` | `e1 > e2` |  verdadeiro se *e1* **maior** que *e2* |
+| `>=` | `e1 >= e2` | verdadeiro se *e1* **maior ou igual** a *e2* |
+| `<` | `e1 < e2` | verdadeiro se *e1* **menor** que *e2* |
+| `<=` | `e1 <= e2` | verdadeiro se *e1* **menor ou igual** a *e2* |
+| `==` | `e1 == e2` | verdadeiro se *e1* **igual** a *e2* |
+| `!=` | `e1 != e2` | verdadeiro se *e1* **diferente** de *e2* |
+| `&&` | `e1 && e2` | verdadeiro se *e1* **e** *e2* forem ambos verdadeiros |
+| `||` | `e1 || e2` | verrdadeiro se *e1* **ou** *e2* forem verdadeiros |
+| `!` | `!e1` | **não** *e1* verdadeiro resulta falso, e **não** *e1* falso resulta verdadeiro |
 
 ## Bibliografia
 

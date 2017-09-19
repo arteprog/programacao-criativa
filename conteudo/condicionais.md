@@ -2,9 +2,9 @@
 
 ## As bifurcações no caminho de execução do código
 
-Saindo de casa, se (`if`) está chovendo, a condição "chovendo" é verdadeira (`true`), então eu levo meu guarda-chuva;
+Saindo de casa, se (`if`) está chovendo, a condição "chovendo" é verdadeira (`true`), então levo o guarda-chuva;
 
-opcionalmente defino que, senão (`else`), quando a condição "chovendo" é falsa (`false`), levo meus óculos de sol.
+opcionalmente defino que, senão (`else`), quando a condição "chovendo" é falsa (`false`), levo óculos de sol.
 
 ## Sintaxe if/else e if
 

@@ -54,7 +54,7 @@ void draw(){
 
 ## Comparações e operadores lógicos
 
-Os valores *true* (verdadeiro) e *false* (falso) são o resultado das comparações e das chamadas operações lógicas **e** (&&), **ou** (||) e **não** (!). Podem ser armazendados em variáveis do tipo *boolean* (Booleano, em homenagem a [George Boole](https://pt.wikipedia.org/wiki/George_Boole)) definidas pela pessoa que criou o programa, representando um *estado*.
+Os valores *true* (verdadeiro) e *false* (falso) são o resultado das comparações e das chamadas operações lógicas **e** (&&), **ou** (||) e **não** (!). Podem ser armazenados em variáveis do tipo *boolean* (Booleano, em homenagem a [George Boole](https://pt.wikipedia.org/wiki/George_Boole)) definidas pela pessoa que criou o programa, representando um *estado*.
 
 Da mesma forma, são os valores acessados quando usamos as variáveis de sistema *mousePressed* e *keyPressed*.
  

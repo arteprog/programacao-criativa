@@ -36,21 +36,22 @@ void setup(){
 }
 
 void draw(){
-  if (mousePressed) {                 // "Se" o mouse estiver pressionado
-     ellipse(mouseX, mouseY, 10, 10); // ENTÃO desenha um círculo na posição do mouse
-  }                                   // termina o “Se”
+  if (mouseY<100) { // se a posição Y do mouse for menor que 100, o mouse estiver perto do topo da tela
+    fill(255);      // então pede preenchimento branco (só executa quando mouseY é menor que 100)
+  } else {          // termina o bloco “se/então” e começa o do “senão”
+    fill(100);      // preenchimento cinza 100 (só executa quando mouseY não é menor que 100)
+  }                 // termina o bloco do “senão”    
 
-  if (mouseY<100) { // Se a posição Y do mouse menor que 100 (perto do topo da tela)
-    fill(255);      // "Então" preenchimento branco
-  } else {          // termina o “Então” e começa o “Senão”
-    fill(100);      // preenchimento cinza 100
-  }                 // termina o “Senão”    
+  if (mousePressed) {                 // Se o mouse estiver pressionado
+     ellipse(mouseX, mouseY, 10, 10); // Então desenha um círculo na posição do mouse
+  }                                   // termina o bloco (repare que no faz nada se o mouse estiver solto)
 
   if (keyPressed && key == 'a') { // Se uma tecla foi precionada E (&&) a tecla foi o caractere 'a'
-    background(200);              // Apague a tela com um fundo cinza
+    background(200);              // Apague a tela com um fundo cinza (só executa sob as condições acima)
   }
 }
 ```
+
 ## Comparações e operadores lógicos
 
 Os valores *true* (verdadeiro) e *false* (falso) são o resultado das comparações e das chamadas operações lógicas **e** (&&), **ou** (||) e **não** (!). 

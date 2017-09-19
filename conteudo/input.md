@@ -46,15 +46,27 @@ void setup(){
 }
 
 void draw(){
-  if (mousePressed) {                      // Se o mouse estiver pressionado
+  if (keyPressed && keyCode == SHIFT) {   // se a tecla SHIFT estiver pressonada
+    strokeWeight(5);                      // usa linha mais grossa 
+    stroke(255);                          // com traço branco
+  } else {                                // senão, quando tecla SHIFT não estiver pressonada
+    strokeWeight(1);                      // usa linha fina grossa
+    stroke(0);                            // com traço preto
+  }
+
+  if (mousePressed) {                        // Se o mouse estiver pressionado
      line(pmouseX, pmouseY, mouseX, mouseY); // Então desenha uma linha da posição anterior do mouse até a atual
-  }                                        // termina o bloco (repare que no faz nada se o mouse estiver solto)
+  }                                          // termina o bloco (repare que no faz nada se o mouse estiver solto)
 }
 
-void keyPressed(){    // Esta funço executa uma vez quando uma tecla é pressionada
-  if (key == 'a') {   // Se a tecla do caractere 'a' foi a última pressionada
-    background(200);  // Apague a tela com um fundo cinza (só executa sob as condições acima)
+void keyPressed(){              // Esta função executa uma vez quando uma tecla é pressionada
+  if (key == 'a') {                           // Se a tecla do caractere 'a' foi a última pressionada
+    background(200);                          // Apague a tela com um fundo cinza (só executa sob as condições acima)
   }
+  if (keyCode == DOWN) {                      // Se a seta para baixo foi precionada
+    saveFrame("imagem-####.png");             // salve a imagem da tela de pintura em um arquivo PNG 
+    println("salvo o frame " + frameCount);   // mostre no console o número do frame
+  }  
 }
 ```
 

@@ -58,17 +58,17 @@ Os valores *true* (verdadeiro) e *false* (falso) são o resultado das comparaç�
 
 Da mesma forma, são os valores acessados quando usamos as variáveis de sistema *mousePressed* e *keyPressed*.
  
-|operador | uso | descrição
+|operador | uso | descrição |
 |:---:  |:---: |--- |
-| > | e1 > e2 |  verdadeiro se *e1* **maior** que *e2* 
-| >= | e1 >= e2 | verdadeiro se *e1* **maior ou igual** a *e2*
-| < | e1 < e2 | verdadeiro se *e1* **menor** que *e2*
-| <= | e1 <= e2 | verdadeiro se *e1* **menor ou igual** a *e2*
-| == | e1 == e2 | verdadeiro se *e1* **igual** a *e2*
-| != | e1 != e2 | verdadeiro se *e1* **diferente** de *e2*
-| && | e1 && e2 | verdadeiro se *e1* **e** *e2* forem ambos verdadeiros
-| \|\| | e1 \|\| e2 | verrdadeiro se *e1* **ou** *e2* forem verdadeiros
-| ! | !e1 | **não** verdadeiro é falso, e **não** falso é verdadeiro
+| > | e1 > e2 |  verdadeiro se *e1* **maior** que *e2* |
+| >= | e1 >= e2 | verdadeiro se *e1* **maior ou igual** a *e2* |
+| < | e1 < e2 | verdadeiro se *e1* **menor** que *e2* |
+| <= | e1 <= e2 | verdadeiro se *e1* **menor ou igual** a *e2* |
+| == | e1 == e2 | verdadeiro se *e1* **igual** a *e2* |
+| != | e1 != e2 | verdadeiro se *e1* **diferente** de *e2* |
+| && | e1 && e2 | verdadeiro se *e1* **e** *e2* forem ambos verdadeiros |
+| \|\| | e1 \|\| e2 | verrdadeiro se *e1* **ou** *e2* forem verdadeiros |
+| ! | !e1 | **não** *e1* verdadeiro resulta falso, e **não** *e1* falso resulta verdadeiro |
 
 ## Bibliografia
 

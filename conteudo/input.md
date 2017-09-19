@@ -4,7 +4,7 @@
 
 No Processing, o teclado e o mouse são as principais formas de entrada de dados. Posteriormente trataresmos da leitura de arquivos e outras fontes de dados.
 
-Há duas maneiras de se obter informações sobre cliques do mouse e teclas sendo pressionadas. Variáveis de sistema como `keyPressed` e `mousePressed`ou funções definidas pela pessoa criando o programa com os nomes '
+Há duas maneiras de se obter informações sobre cliques do mouse e teclas sendo pressionadas. Variáveis de sistema como `keyPressed`, `keyReleased`, `mousePressed` e `mousePressed` ou funções definidas pela pessoa criando o programa com os nomes "encomendados", como `keyPressed()`, `keyReleased()`, `mousePressed()`ou `mouseReleased()`. Neste último caso, atente que é preciso que exista um bloco `draw()`, mesmo que vazio, para que os eventos de teclado e mouse disparem as funções.
 
 ## Vocabulário
 
@@ -38,7 +38,7 @@ keyTyped()    // defina uma função com este nome para ser executada quando uma
 
 ## Exemplo
 
-![exemplo1](/assets/imagens/condicional1.png)
+<!-- [exemplo1](/assets/imagens/condicional1.png) -->
 
 ``` pde
 void setup(){
@@ -46,9 +46,9 @@ void setup(){
 }
 
 void draw(){
-  if (mousePressed) {                 // Se o mouse estiver pressionado
-     ellipse(mouseX, mouseY, 10, 10); // Então desenha um círculo na posição do mouse
-  }                                   // termina o bloco (repare que no faz nada se o mouse estiver solto)
+  if (mousePressed) {                      // Se o mouse estiver pressionado
+     line(pmouseX, pmouseY, mouseX, mouseY); // Então desenha uma linha da posição anterior do mouse até a atual
+  }                                        // termina o bloco (repare que no faz nada se o mouse estiver solto)
 }
 
 void keyPressed(){    // Esta funço executa uma vez quando uma tecla é pressionada

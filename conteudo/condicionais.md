@@ -2,9 +2,9 @@
 
 ## As bifurcações no caminho de execução do código
 
-Saindo de casa, se (*if*) está chovendo, a condição "chovendo" é verdadeira, então eu levo meu guarda-chuva.
+Saindo de casa, se (*if*) está chovendo, a condição "chovendo" é verdadeira, então eu levo meu guarda-chuva;
 
-Opcionalmente, senão (*else*) a condição "chovendo" é falsa, uma outra ação é tomada: levo meus óculos de sol.
+senão (*else*), opcionalmente, quando a condição "chovendo" é falsa, uma outra ação é tomada: levo meus óculos de sol.
 
 ## Sintaxe if/else e if
 

@@ -1,13 +1,12 @@
-# Input
+# Input - entradas de dados
 
-## Entradas de dados
+No Processing, o teclado e o mouse são as principais formas de entrada de dados. Posteriormente trataresmos da leitura de arquivos e outras fontes de dados. Há duas maneiras de se obter informações sobre o movimento e cliques do mouse, assim como saber sobre as teclas sendo pressionadas no teclado. 
 
-No Processing, o teclado e o mouse são as principais formas de entrada de dados. Posteriormente trataresmos da leitura de arquivos e outras fontes de dados. Há duas maneiras de se obter informações sobre o movimento e cliques do mouse, assim como de teclas sendo pressionadas. 
-
-## Variáveis de sistema 
+1. Variáveis de sistema 
 
 As variáveis de sistema como `mouseX`, `mouseY`, `keyPressed`e `mousePressed` contém a todo instante informações sobre o estado do teclado e mouse. Podem ser consultadas em qualquer lugar do programa e são vistas frequentemente em condicionais dentro do bloco de `draw()`.
 
+| tipo | nome | descrição | 
 | --- | --- | --- |
 | int | mouseButton     |  variável de sistema que indica qual botão do mouse foi clicado LEFT, RIGHT ou CENTER
 | boolean | mousePressed    |  variável de sistema que indica o estado do mouse (true indica pressionado)
@@ -19,25 +18,7 @@ As variáveis de sistema como `mouseX`, `mouseY`, `keyPressed`e `mousePressed` c
 | int | keyCode       |  código da última tecla, usado para identificar teclas não alfa-numéricas, como SHIFT, UP e etc.
 | boolean | keyPressed    |  variável de sistema que indica se alguma tecla está pressionada
 
-## Funções para tratar eventos
-
-Definidas pela pessoa criando o programa, com os nomes "encomendados" como `keyPressed()`, `keyReleased()`, `mousePressed()`ou `mouseReleased()` estas funçõesprecisam ser definidas fora do bloco de `draw()` (e o `draw()` precisa existir, mesmo que vazio, para garantir a execução de umlaço principal do Processing) e serão executadas quanso seus respectivos eventos de teclado e mouse acontecerem.
-
-| --- | --- |
-| mouseReleased() |  função executada quando o botão do mouse é solto depois de pressionado
-| mouseWheel()    |  função executada quando a rodinha do mouse é girada
-| mouseClicked()  |  funcão executada quando o mouse é clicado (já solto o botão)
-| mouseDragged()  |  função executada quando o mouse é movido pressionado
-| mouseMoved()    |  função executada quando o mouse é movido
-| mousePressed()  |  função executada quando o botão do mouse é pressionado
-| keyPressed()  |  função executada quando uma tecla é pressionada
-| keyReleased() |  função executada quando uma tecla é solta
-| keyTyped()    |  função executada quando uma tecla alfa-numérica é digitada
-
-
-## Exemplo
-
-<!-- [exemplo1](/assets/imagens/condicional1.png) -->
+### Exemplo
 
 ``` pde
 void setup(){
@@ -57,6 +38,37 @@ void draw(){
      line(pmouseX, pmouseY, mouseX, mouseY); // Então desenha uma linha da posição anterior do mouse até a atual
   }                                          // termina o bloco (repare que no faz nada se o mouse estiver solto)
 }
+```
+
+2. Funções para tratar eventos
+
+Definidas pela pessoa criando o programa, com os nomes especiais "encomendados", como `keyPressed()`, `keyReleased()`, `mousePressed()`ou `mouseReleased()`, estas funções precisam ser definidas fora do bloco de `draw()` (note que o `draw()` precisa existir, mesmo que vazio, para garantir a execução de um laço principal do Processing) e serão executadas apenas quando seus respectivos eventos de teclado e mouse acontecerem.
+
+| nome | descrição |
+| --- | --- |
+| mouseReleased() |  função executada quando o botão do mouse é solto depois de pressionado
+| mouseWheel()    |  função executada quando a rodinha do mouse é girada
+| mouseClicked()  |  funcão executada quando o mouse é clicado (já solto o botão)
+| mouseDragged()  |  função executada quando o mouse é movido pressionado
+| mouseMoved()    |  função executada quando o mouse é movido
+| mousePressed()  |  função executada quando o botão do mouse é pressionado
+| keyPressed()  |  função executada quando uma tecla é pressionada
+| keyReleased() |  função executada quando uma tecla é solta
+| keyTyped()    |  função executada quando uma tecla alfa-numérica é digitada
+
+
+### Exemplo
+
+<!-- [exemplo1](/assets/imagens/condicional1.png) -->
+
+``` pde
+void setup(){
+  size(200, 200);
+}
+
+void draw(){
+  line(pmouseX, pmouseY, mouseX, mouseY); // Desenha uma linha da posição anterior do mouse até a atual
+}
 
 void keyPressed(){              // Esta função executa uma vez quando uma tecla é pressionada
   if (key == 'a') {                           // Se a tecla do caractere 'a' foi a última pressionada
@@ -68,7 +80,6 @@ void keyPressed(){              // Esta função executa uma vez quando uma tecl
   }  
 }
 ```
-
 
 ## Bibliografia
 

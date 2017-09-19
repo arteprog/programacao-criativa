@@ -53,8 +53,9 @@ void draw(){
 ```
 ## Os operadores lógicos
 
-|operador | uso | descriçãp |
-|-  |- |
+
+|operador | uso |
+|---  |---- |
 | > | e1 > e2 |
 | >= | e1 >= e2 |
 | < | e1 < e2 |

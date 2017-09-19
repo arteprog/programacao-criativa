@@ -1,21 +1,29 @@
 # Condicionais
 
-## As bifurcações no caminho de execução do código
+![condicional](/assets/imagens/condicional-com-else.jpg)
 
-![condicional](/assets/imagens/condicional.jpg)
+## As bifurcações no caminho de execução do código
 
 *Se* está chovendo (a condição de chuva é verdadeira) *então* eu levo meu guarda-chuva.
 
 Opcionalmente, *senão* (se a condição de chuva é falsa) eu levo meus óculos de sol.
 
-## Sintaxe if/else
+## Sintaxe if/else e if
 
 ``` java
 if (condição) {  // a condição é avaliada como verdadeira ou falsa
-                 // Se verdadeira, então... bloco de código a ser executado;
-} else {         // termina o “Então” e opcionalmente começa o “Senão”
+                 // Se verdadeira a condição, então... bloco de código a ser executado;
+} else {         // termina o “então” e opcionalmente começa o “senão”
                  // Bloco opcional de código a ser executado se a condição for falsa;
-}                // termina o bloco do “Senão”
+}                // termina o bloco do “senão”
+```
+
+![condicional](/assets/imagens/condicional-sem-else.jpg)
+
+``` java
+if (condição) {  // a condição é avaliada como verdadeira ou falsa
+                 // Se verdadeira a condiço, então... bloco de código a ser executado;
+}                // termina o bloco do “se/então”
 ```
 
 ## Exemplos
@@ -43,8 +51,16 @@ void draw(){
   }
 }
 ```
+## Os operadores lógicos
 
-
+| > | op1 > op2 |
+| >= | op1 >= op2 |
+| < | op1 < op2 |
+| <= | op1 <= op2 |
+| == | op1 == op2 |
+| != | op1 != op2 |
+| && | op1 && op2 |
+| || | op1 || op2 |
 
 ## Bibliografia
 

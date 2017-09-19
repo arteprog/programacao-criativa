@@ -51,22 +51,27 @@ void draw(){
   }
 }
 ```
-## Os operadores lógicos
+## Comparações e operadores lógicos
 
-Os valores *true* (verdadeiro) e *false* (falso) são do tipo *boolean* (Booleanos, em homenagem a [George Boole](https://pt.wikipedia.org/wiki/George_Boole)), podem ser acessados por meio de variáveis de sistema (como *mousePressed*) e são também o resultado de uma série de operações de comparação assim como as chamadas operações lógicas E (&&), OU (||) e NÃO (
+Os valores *true* (verdadeiro) e *false* (falso) são o resultado das comparações e das chamadas operações lógicas **e** (&&), **ou** (||) e **não** (!). 
 
-|operador | uso | descrição |
-|---  |---- |--- |
-| > | e1 > e2 |  verdadeiro se *e1* maior que *e2* |
-| >= | e1 >= e2 | 
-| < | e1 < e2 |
-| <= | e1 <= e2 |
-| == | e1 == e2 |
-| != | e1 != e2 |
-| && | e1 && e2 |
-| \|\| | e1 \|\| e2 | verrdadeiro se *e1* OU *e2* for verdadeiro |
-| ! | !e1 | se *e1* for verdadeiro, avalia falso e vice-versa |
+Podem ser armazendados em variáveis do tipo *boolean* (Booleanos, em homenagem a [George Boole](https://pt.wikipedia.org/wiki/George_Boole)) definidas pela pessoa que criou o programa, representando um *estado*, da mesma forma são os valores acessados pelas variáveis de sistema *mousePressed* e *keyPressed*.
+ 
+|operador | uso | descrição
+|:---:  |:---: |--- |
+| > | e1 > e2 |  verdadeiro se *e1* **maior** que *e2* 
+| >= | e1 >= e2 | verdadeiro se *e1* **maior ou igual** a *e2*
+| < | e1 < e2 | verdadeiro se *e1* **menor** que *e2*
+| <= | e1 <= e2 | verdadeiro se *e1* **menor ou igual** a *e2*
+| == | e1 == e2 | verdadeiro se *e1* **igual** a *e2*
+| != | e1 != e2 | verdadeiro se *e1* **diferente** de *e2*
+| && | e1 && e2 | verdadeiro se *e1* **e** *e2* forem ambos verdadeiros
+| \|\| | e1 \|\| e2 | verrdadeiro se *e1* **ou** *e2* forem verdadeiros
+| ! | !e1 | **não** verdadeiro é falso, e **não** falso é verdadeiro
 
 ## Bibliografia
 
-Casey Reas and Ben Fry. 2007. Processing: A Programming Handbook for Visual Designers and Artists. Cambridge: MIT Press.
+REAS, C.; FRY, B. Processing: a programming handbook for visual designers and artists. Cambridge, Mass: MIT Press, 2007. 
+
+TERZIDIS, K. Algorithms for Visual Design Using the Processing Language. [s.l.] John Wiley & Sons, 2009. 
+

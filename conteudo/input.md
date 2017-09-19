@@ -20,7 +20,7 @@ As variáveis de sistema como `mouseX`, `mouseY`, `keyPressed`e `mousePressed` c
 
 ### Exemplo
 
-``` pde
+```pde
 void setup(){
   size(200, 200);
 }
@@ -61,12 +61,15 @@ Definidas pela pessoa criando o programa, com os nomes especiais "encomendados",
 
 <!-- [exemplo1](/assets/imagens/condicional1.png) -->
 
-``` pde
+```pde
 void setup(){
   size(200, 200);
 }
 
 void draw(){
+}
+
+void mouseDragged() {
   line(pmouseX, pmouseY, mouseX, mouseY); // Desenha uma linha da posição anterior do mouse até a atual
 }
 

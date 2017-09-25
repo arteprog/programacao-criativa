@@ -17,6 +17,9 @@ Em 1962, é criado por George Maciunaso o movimento coletivo, artístico e cultu
 
 > O projeto estava em construção permanente, sujeito a mudanças contínuas provocadas pelos visitantes, por Paik e seus colegas artistas, bem como por defeitos técnicos. Isto foi especialmente verdadeiro complicado em construções com pianos e aparelhos de TV. Tomas Schmit, um dos ajudantes de Paik, observou: "Se algo quebrava, era reparado; ou substituído por outra coisa; ou simplesmente deixado de lado." (NET)
 
+![nanJunePaik](/assets/imagens/nanJunePaik.jpg)
+###### Imagem: Nam June Paik, «Exposition of Music – Electronic Television», 1963. Fotografia: Manfred Montwé
+
 O termo **arte conceitual** foi usado pela primeira vez num texto de [Henry Flynt](/assets/referencias/essay-concept-art.pdf), em 1961. Nesse texto, Flynt defende que o conceito é a matéria da arte. O mais importante para a arte conceitual são as idéias, a execução da obra fica em segundo plano e tem pouca relevância. Ou nas palavras de [Sol Lewitt](/assets/referencias/paragraphs-on-conceptual-art.pdf) - "na arte conceitual, a idéia ou o conceito é o mais importante aspecto do trabalho. Quando um artista usa uma forma conceitual de arte, isso significa que todo o planejamento e todas as decisões são tomadas de antemão e a execução é um assunto superficial." (Lewitt 1967)
 
 ## Bibliografia

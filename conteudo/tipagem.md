@@ -13,7 +13,7 @@ Quando declaramos uma variável, um nome que vai apontar para um valor ou objeto
 | `string`  |  cadeia de caracteres, `“texto”` (note as aspas duplas)
 | `char`| uma letra ou glifo UNICODE, como `'a'` (note as aspas simples)
 | `color`  |  armazena uma cor, que pode ser construída com `color(R,G,B)` ou `color(R,G,B,Alfa)`
-| `void`| o "vazio é o tipo das funções que nada retorna
+| `void`| o "vazio" é o tipo das funções que nada retorna
 
 ### Alguns objetos mais sofisticados
 

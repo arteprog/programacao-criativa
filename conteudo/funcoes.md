@@ -20,12 +20,11 @@ void setup() {
   size(400, 400);
 }
 
-void draw(){
-
-olho(200, 200, random(10,150));
+void draw() {
   background(0);
-  olho(100, 200, random(10,150)); 
-  olho(200, 300, random(10,150));
+  olho(300, 100, random(50, 100));
+  olho(100, 200, random(10, 150)); 
+  olho(200, 300, random(10, 150));
 }
 
 void olho(float x, float y, float tamanho) {

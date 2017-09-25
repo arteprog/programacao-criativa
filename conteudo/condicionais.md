@@ -70,6 +70,14 @@ Da mesma forma, são os valores acessados quando usamos as variáveis de sistema
 | `\|\|` | `e1 \|\| e2` | verrdadeiro se *e1* **ou** *e2* forem verdadeiros |
 | `!` | `!e1` | **não** *e1* verdadeiro resulta falso, e **não** *e1* falso resulta verdadeiro |
 
+## Condicionais aninhadas e outras estruturas
+
+É comum encontraramos, além da composição das condições usando operadores lógicos, `ìf` dentro de um `ìf` ou de um `else`.
+
+No caso de repetidos `if \ else if` podemos usar a estrutura [`switch\case`](https://processing.org/reference/switch.html)
+
+Confira também a abreviação de `if` + atribuições, o [operador ternário ?:](https://processing.org/reference/conditional.html)
+
 ## Bibliografia
 
 REAS, C.; FRY, B. Processing: a programming handbook for visual designers and artists. Cambridge, Mass: MIT Press, 2007. 

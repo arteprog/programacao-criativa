@@ -13,7 +13,7 @@ Quando declaramos uma variável, um nome que vai apontar para um valor ou objeto
 | `string`  |  cadeia de caracteres, `“texto”` (note as aspas duplas)
 | `char`| uma letra ou glifo UNICODE, como `'a'` (note as aspas simples)
 | `color`  |  armazena uma cor, que pode ser construída com `color(R,G,B)` ou `color(R,G,B,Alfa)`
-| `void`| o "vazio" é o tipo das funções que nada retorna
+| `void`| o "vazio" é o tipo das funções que nada retornam
 
 ### Alguns objetos mais sofisticados
 
@@ -21,7 +21,6 @@ Quando declaramos uma variável, um nome que vai apontar para um valor ou objeto
 
 | classe | descrição |
 | --- | --- |
-| `PImage`  | imagens raster/bitmap
-| `PShape` |  formas vetorais, como as descritas num SVG
-|`PVector`  |  
-|`PVector`  |  
+| `PImage` | imagens raster/bitmap
+| `PShape` | formas vetorais, como as descritas num SVG
+| `PVector` | vetor, comunmente usado para descreve posição, velocidade ou aceleração em 2 ou 3 dimensões 

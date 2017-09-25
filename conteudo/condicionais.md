@@ -76,7 +76,7 @@ Da mesma forma, são os valores acessados quando usamos as variáveis de sistema
 
 No caso de repetidos `if \ else if` podemos usar a estrutura [`switch\case`](https://processing.org/reference/switch.html)
 
-Confira também a abreviação de `if` + atribuições, o [operador ternário ?:](https://processing.org/reference/conditional.html)
+Confira também a abreviação de `if` + atribuições, o [operador ternário `?:`](https://processing.org/reference/conditional.html)
 
 ## Bibliografia
 

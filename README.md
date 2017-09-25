@@ -30,6 +30,6 @@ O curso introdutório Programação Criativa, visa promover a familiarização
 3. [Interação](/conteudo/interacao.md)
 4. [Condicionais](/conteudo/condicionais.md)
 5. [Input](/conteudo/input.md)
-6. [Arte Gerativa]()
-7. [Funções]()
-8. [Aleatoriedade]()
+6. [Arte Gerativa]
+7. [Funções]
+8. [Aleatoriedade]

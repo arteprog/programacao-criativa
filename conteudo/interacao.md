@@ -15,7 +15,7 @@ O **coeficiente artístico** refere-se a discrepância entre a intenção do art
 
 Em 1962, é criado por George Maciunaso o movimento coletivo, artístico e cultural FLUXUS. Com influência do dadaísmo, trouxe a filosofia zen-budista, o happening e o entrecruzamento de linguagens para a arte. O grupo FLUXUS sugere um modo revolucionário de pensar sobre a prática e o processo da arte, confiando no espectador e no acaso (como Duchamp) como partes fundamentais do ato criador, como por exemplo, na "Exposition of music - eletronic television", de Nan June Paik, apresentada 1963, na Galeria Parnass, em Wuppertal (Alemanha). 
 
-> O projeto estava em construção permanente, sujeito a mudanças contínuas provocadas pelos visitantes, por Paik e seus colegas artistas, bem como por defeitos técnicos. Isto foi especialmente verdadeiro complicado em construções com pianos e aparelhos de TV. Tomas Schmit, um dos ajudantes de Paik, observou: "Se algo quebrava, era reparado; ou substituído por outra coisa; ou simplesmente deixado de lado." (NET)
+> O projeto estava em construção permanente, sujeito a mudanças contínuas provocadas pelos visitantes, por Paik e seus colegas artistas, bem como por defeitos técnicos. Isto foi especialmente verdadeiro complicado em construções com pianos e aparelhos de TV. Tomas Schmit, um dos ajudantes de Paik, observou: "Se algo quebrava, era reparado; ou substituído por outra coisa; ou simplesmente deixado de lado." Dieter Daniels. (NET)
 
 ![nanJunePaik](/assets/imagens/nanJunePaik.jpg)
 ###### Imagem: Nam June Paik, «Exposition of Music – Electronic Television», 1963. Fotografia: Manfred Montwé

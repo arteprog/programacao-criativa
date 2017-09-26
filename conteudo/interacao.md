@@ -28,7 +28,7 @@ Nesse texto, Flynt defende... Ou nas palavras de [Sol Lewitt](/assets/referencia
 
 Duchamp, Marcel. 1965. O ato criador. Disponível em <https://asno.files.wordpress.com/2009/06/duchamp.pdf>. Acesso em 15 set. 2017.
 
-Lewitt, Sol. 1967. "Paragraphs on Conceptual Art". Artforum. 
+LeWitt, ‘Paragraphs on Conceptual Art’, Artforum Vol.5, no. 10, Summer 1967, pp. 79-83 
 
 NET, Media Art. Media Art Net | Paik, Nam June: Exposition of Music – Electronic Television. text. Disponível em: <http://www.medienkunstnetz.de/works/exposition-of-music/images/5/?desc=full>. Acesso em: 25 set 2017. 
 

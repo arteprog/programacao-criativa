@@ -34,5 +34,5 @@ O curso introdutório Programação Criativa, visa promover a familiarização
 7. [Funções](/conteudo/funcoes.md)
 8. [Variáveis, parâmetros e tipos](/conteudo/tipagem.md)
 9. [Aleatoriedade](/conteudo/numeros-aleatorios.md)
-10.[Laços de repetição](/conteudo/lacos.md)
-11.[Translação e rotação](/conteudo/translacao-rotacao.md)
+10. [Laços de repetição](/conteudo/lacos.md)
+11. [Translação e rotação](/conteudo/translacao-rotacao.md)

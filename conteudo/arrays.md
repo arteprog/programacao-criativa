@@ -5,13 +5,20 @@ Arrays são variáveis ‘compostas’ com múltiplos elementos de um mesmo tipo
 ### Sintaxe
 
 ```java
-tipo[] nome_do_array; // declarar com tipo uma variável array
-nome_do_array = new tipo[número de itens]; // criar um array vazio
-nome_do_array[índice] = valor;// atribuir um valor a um elemento
+// declarar com tipo uma variável array
+tipo[] nome_do_array; 
+
+// criar um array vazio
+nome_do_array = new tipo[número_de_itens]; 
+
 // declarar array com tipo, cria;e atribuir valores de uma vez
-tipo[] nome_do_array = { valor_separados_por_vírgulas }; 
+tipo[] nome_do_array = { valores_separados_por_vírgulas };
+
+// atribuir um valor a um elemento
+nome_do_array[índice] = valor; 
+
 // para ler elementos, indicar o índice
-println(nome_do_array[índice]);  // 0 é o índice do primeiro elemento
+println(nome_do_array[índice]);  
 ```
 
 ### Exemplos
@@ -21,11 +28,13 @@ println(nome_do_array[índice]);  // 0 é o índice do primeiro elemento
 int[] w = { 50, 61, 83, 69, 71, 50, 29, 31, 17, 39 };
 // para ler o primeiro valor do Array
 rect(10, 10, w[0], 8)
+
 // para ler todos os valores um por vez!!!
 // nome_do_array.length contém o número de elementos.
 for (int i = 0; i < w.length; i++) {
   rect(0, i*10, w[i], 8);
 }
+
 // outra maneira! 
 int i = 0;
 for (int n : w) { // ao ‘n’ vai ser atribuído um valor por vez! 

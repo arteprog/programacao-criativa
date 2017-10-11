@@ -15,8 +15,8 @@ for (início [inicializa contador]; condição [testa contador]; coda [atualiza 
 
 Quando a estrutura `for(){}` é executada, a seguinte sequência passos ocorre: 
 1. os comandos em **início** são executados [em geral a inicialização de uma variável contador];
-2. a **expressão/condição** teste é avaliada verdadeira ou falsa (`true` ou `false`);
-3. Caso a **condição** teste seja verdadeira (`true`), passa-se ao passo 4. Caso seja falsa (`false`), passa-se ao passo 6 [normalmente a condição testa o contador de forma a limitar o número de voltas"];
+2. a **condição** ou expressão teste [normalmente comparando o contador para limitar o número de "voltas"] é avaliada verdadeira ou falsa (`true` ou `false`);
+3. Caso a **condição** seja verdadeira (`true`), passa-se ao passo 4. Caso seja falsa (`false`), passa-se ao passo 6;
 4. Executam-se os comandos contidos no **bloco de código** da estrutura em laço; 
 5. Executam-se os comandos em **coda** [normalmente mudando o valor da variável contador] e passa-se ao passo 2;
 6. Terminou o laço.

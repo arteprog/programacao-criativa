@@ -5,13 +5,14 @@
  Existe uma estrutura especial chamada `Table` que facilita manipular dados em forma de tabela no Processing.
 
 ## Sintaxe
+
+Dada um objeto do tipo `Table` chamada `tabela`, podemos ler uma célula:
  ```java
  int valor1 = tabela.getInt(número da linha, número da coluna);
  float valor 2 = tabela.getFloat(número da linha, número da coluna);
  String valor3 = tabela.getString(número da linha, número da coluna);
  ```
-
-### para ler uma linha específica da tabela:
+### para ler uma linha da tabela:
 ```java
 TableRow linha = tabela.getRow(3) // lê a quarta linha
 \\ Depois de ler uma linha, nós podemos pedir por uma valor específico de uma coluna

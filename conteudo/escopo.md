@@ -4,9 +4,9 @@
 
 Antes de usar uma variável no Processing é preciso que ela seja declarada, por exemplo `int i;`, `float angulo;` ou `color minhaCor;`, no mesmo momento podemos já atribuir um valor, isto é, apontar o nome da variável para um valor, como em `int i = 0;`, `color vermelho = color(255, 0, 0);` ou ainda `float redutor = 0.05;`
 
-Quando a declaração de uma variável acontece dentro da definição uma função (como `setup()`, por exemplo), dizemos que tem *escopo local* e somente o código dentro da função reconhece aquele nome e enxerga as atribuições dos valores realizadas neste escopo. Também os parâmetros ou argumentos na definição de um função com parâmetros pertencem ao escopo local da função.
+Quando a declaração de uma variável acontece dentro da definição de uma função (como `setup()`, por exemplo), dizemos que tem *escopo local* e somente o código dentro da função reconhece aquele nome e enxerga as atribuições dos valores realizadas neste escopo. Também os parâmetros ou argumentos na definição de um função com parâmetros pertencem ao escopo local da função.
 
-### exemplo de uma variável locais
+### exemplo de uma variável local
 
 ```pde
 void olho(float x, float y, float tamanho) {
@@ -43,4 +43,4 @@ void draw(){
 }
 ```
 
-É comum escutarmos que devemos usar variáveis globais com parcimônia, usadas descuidadamente, elas criam o risco de alterarmos valores inadvertidamente em pontos inesperados do programa.
+É comum escutarmos que devemos usar variáveis globais com parcimônia, usadas descuidadamente, elas criam o risco de alterarmos  inadvertidamente valores em pontos inesperados do programa.

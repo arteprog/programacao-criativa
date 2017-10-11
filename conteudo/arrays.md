@@ -4,20 +4,24 @@ Arrays são variáveis ‘compostas’ com múltiplos elementos de um mesmo tipo
 
 ### Sintaxe
 
+#### declarar com tipo uma variável array
 ```java
-// declarar com tipo uma variável array
 tipo[] nome_do_array; 
+```
 
-// criar um array vazio
+#### criar um array vazio
+```java
 nome_do_array = new tipo[número_de_itens]; 
+```
 
-// declarar array com tipo, cria;e atribuir valores de uma vez
+#### declarar array com tipo, criar e atribuir valores de uma vez
+```java
 tipo[] nome_do_array = { valores_separados_por_vírgulas };
+```
 
-// atribuir um valor a um elemento
+#### ler ou atribuir um valor a um elemento
+```java
 nome_do_array[índice] = valor; 
-
-// para ler elementos, indicar o índice
 println(nome_do_array[índice]);  
 ```
 

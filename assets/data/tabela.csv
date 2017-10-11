@@ -1,13 +1,13 @@
 x,y,tamanho,R,G,B,nome,v,,,
-0,0,100,255,0,0,Asdrubal,2,,,https://docs.google.com/spreadsheets/d/1cdwfpjI9OEM1_Cd4djzdMqBiu82Q36eMSJLDLR9cz24/pub?gid=0&single=true&output=csv
-20,30,15,127,127,0,Macapa,1,,,http://bit.ly/2gvRyun
+100,100,100,255,0,0,Asdrubal,2,,,
+50,80,15,127,127,0,Macapa,1,,,
 360,40,100,0,255,0,Orion,3,,,
 110,60,10,0,0,255,Pilantragem,2,,,
 50,200,5,0,127,127,oi,2,,,
 275,60,15,0,0,255,é sexta feiraaaa,1,,,
 300,20,10,127,0,127,ebaaaaaaaaaaaaaaaaaa,5,,,
 300,30,5,40,7,9,vamos sair????,2,,,
-100,50,15,50,15,14,vemmmmm,3,,,
+100,50,15,50,15,14,invadiram seu sistema,3,,,
 150,150,10,0,0,0,,1,,,
 120,15,5,15,14,10,dia 7 tem aula,2,,,
 50,27,10,177,78,90,,3,,,

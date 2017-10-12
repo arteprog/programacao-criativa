@@ -21,8 +21,8 @@ tipo[] nome_do_array = { valores_separados_por_vírgulas };
 
 #### ler ou atribuir um valor a um elemento
 ```java
-nome_do_array[índice] = valor; 
 println(nome_do_array[índice]);  
+nome_do_array[índice] = valor; 
 ```
 
 ### Exemplos

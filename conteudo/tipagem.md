@@ -7,9 +7,11 @@ Quando declaramos uma variável, por exemplo `int i = 10;`, o `i` aqui é um nom
 
 ## Conversão
 
-É necessário por vezes converter os dados de um tipo para outro, como por exemplo o número sorteado por uma função `random()` que é um `float` pode ser convertido em `int`.
+É necessário por vezes converter os dados de um tipo para outro, como por exemplo o número sorteado por uma função `random()` que é um `float` pode ser convertido em `int`. E números podem ser convertidos em texto (`String`)
 
-`int R = int(random(256));`
+```pde
+int R = int(random(256));
+println("Red: "+str(R));```
 
 ## Parâmetros e funções
 

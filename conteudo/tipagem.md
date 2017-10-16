@@ -13,7 +13,8 @@ Um outro exemplo seria `float tamanho = 2.5;` em que o nome `tamanho` aponta par
 
 ```pde
 int R = int(random(256));
-println("Red: "+str(R));```
+println("Red: "+str(R));
+```
 
 ## Parâmetros e funções
 

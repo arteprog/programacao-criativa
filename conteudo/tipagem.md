@@ -1,13 +1,15 @@
 
 # Variáveis, parâmetros e seus tipos
 
-## Variveis
+## Variáveis
 
-Quando declaramos uma variável, por exemplo `int i = 10;`, o `i` aqui é um nome que vai apontar para um valor na memória do computador, no caso o número inteiro `10`, na linguagem de programação Java, e no Processing que nela é baseado, precisamos indicar qual o "tipo" do valor ou objeto armazenado, neste caso o tipo é `int`, um número inteiro.  Um outro exemplo seria `float tamanho = 2.5;` em que o nome `tamanho` aponta para o valor `2.5`, um número "de ponto flutuante" do tipo `float`.
+Quando declaramos uma variável, por exemplo `int i = 10;`, o `i` aqui é um nome que vai apontar para um valor na memória do computador, no caso o número inteiro `10`, na linguagem de programação Java, e no Processing que nela é baseado, precisamos indicar qual o "tipo" do valor ou objeto armazenado, neste caso o tipo é `int`, um número inteiro.  
+
+Um outro exemplo seria `float tamanho = 2.5;` em que o nome `tamanho` aponta para o valor `2.5`, um número "de ponto flutuante" (do tipo `float`). Ou ainda `String dev = "Luiza";`, em que `dev` aponta para o texto `Luiza` (um `String`).
 
 ## Conversão
 
-É necessário por vezes converter os dados de um tipo para outro, como por exemplo o número sorteado por uma função `random()` que é um `float` pode ser convertido em `int`. E números podem ser convertidos em texto (`String`)
+É necessário por vezes converter os dados de um tipo para outro, como por exemplo o número sorteado por uma função `random()` que é um `float` pode ser convertido em `int`, sendo truncado (encurtado) se tiver uma parte não inteira. E números podem ser convertidos em texto (`String`).
 
 ```pde
 int R = int(random(256));

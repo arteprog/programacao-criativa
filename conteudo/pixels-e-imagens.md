@@ -1,6 +1,6 @@
 # Pixels e imagens
 
-Uma imagem digital, por vezes chamada de uma imagem bitmap, nada mais é do que uma sequência de números indicando variações de vermelho, verde e azul numa localização particular de uma grade de ***pixels(**, um neologismo cunhado na década de 60 juntado *pix*, abreviação de *picture*, e *el* de *element*, é o menor elemento de uma imagem.
+Uma imagem digital, por vezes chamada de uma imagem bitmap, nada mais é do que uma sequência de números indicando variações de vermelho, verde e azul numa localização particular de uma grade de ***pixels***, um neologismo cunhado na década de 60 juntado *pix*, abreviação de *picture*, e *el* de *element*, é o menor elemento de uma imagem.
 
 A maior parte do tempo nós visualizamos esses pixels como retângulos miniatura justapostos na tela do computador. No entanto, com um pouco de pensamento criativo e com a manipulação dos pixels com código, podemos mostrar esta informação de inúmeras maneiras. Apesar disso, de tempos em tempos, podemos querer quebrar nossa rotina de desenho corriqueira e manipular os pixels da tela diretamente. O Processing proporciona isso através de um **array** de pixels.
 
@@ -24,7 +24,7 @@ Como os pixels são armazenados:
 
 ### Acessando os pixels numa posição X e Y
 
-Use `get()` para os pixels visveis na tela ou o método `.get()` em uma imagem `PImage`.
+Use `get()` para os pixels visveis na tela ou o método `.get()` para os pixels em uma imagem `PImage`.
 
 ```pde
 PImage img;  // Declarando uma variável do tipo PImage
@@ -36,7 +36,9 @@ void setup() {
 }
 
 void draw() {
-  image(img, 0, 0);  // desenha a imagem (PImage, x, y, [largura, altura]*)  *opcionais 
+  if (keyPressed){
+    image(img, 0, 0);  // desenha a imagem (PImage, x, y, [largura, altura]*)  *opcionais 
+  }
   color cor = img.get(mouseX, mouseY); // pega a cor do pixel na posição x, y
   fill(cor);                          // pede o preenchimento!
   ellipse(mouseX, mouseY, 100, 100); // desenha um círculo

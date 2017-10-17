@@ -126,7 +126,7 @@ O valor de um pixel é representado no Processing (e no Java) como um número in
 
 
 | Alpha | Vermelho | Verde | Azul |
-| -  | -  | - | - | - |
+| ---  | ---  | --- | --- | --- |
 | 00000000 | 00000000 |  00000000 | 00000000 |
 
 Esses valores podem ser manipulados com "bit shifting". Isso significa que para acessar uma cor, nós precisamos mexer no nível dos bits para extrair os 8 bits específicos que desejamos.  

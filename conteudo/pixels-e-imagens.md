@@ -22,7 +22,7 @@ Como os pixels são armazenados:
 | --- | --- | --- | --- | --- | --- | --- |
 | |
 
-### Acessandoos pixels numa posição X e Y
+### Acessando os pixels numa posição X e Y
 
 Use `get()` para os pixels visveis na tela ou o método `.get()` em uma imagem `PImage`.
 
@@ -103,13 +103,21 @@ THRESHOLD: Converte a imagem em pixels pretos ou brancos, dependendo se eles est
 ```PImage img;
     img = loadImage("exemplo.jpg");
     image(img, 0, 0);
-    filter(THRESHOLD);```
+    filter(THRESHOLD);
+    ```
+    
 GRAY: Converte as cores na imagem em equivalentes de escala de cinza. Nenhum parâmetro é usado.
+
 INVERT: Define cada pixel para o seu valor inverso. Nenhum parâmetro é usado.
+
 POSTERIZE: Limita cada canal da imagem ao número de cores especificado como parâmetro. O parâmetro pode ser configurado para valores entre 2 e 255, mas os resultados são mais visíveis nos intervalos inferiores.
+
 BLUR: executa um borramento Gaussiano (n.t. Guassian blur), sendo que o parâmetro level especifica a extensão do borramento. Nos casos em que o parâmetro level não é utilizado, o borramento equivalente a um borramento gaussiano de raio 1.
+
 OPAQUE: Define o canal alfa de forma totalmente opaca. Nenhum parâmetro é usado.
+
 ERODE: Reduz as áreas de luz. Nenhum parâmetro é usado.
+
 DILATE: Aumenta as áreas de luz. Nenhum parâmetro é usado.
 
 # Manipulação de bits em Pixels

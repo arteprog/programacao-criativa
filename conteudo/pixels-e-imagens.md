@@ -18,7 +18,7 @@ Como os pixels aparecem:
 
 Como os pixels são armazenados:
 
-| 0 | 1 | 2 | 3 | 4 | ... | 24 |
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |  ... | 24 |
 | --- | --- | --- | --- | --- | --- | --- |
 | |
 
@@ -104,7 +104,7 @@ THRESHOLD: Converte a imagem em pixels pretos ou brancos, dependendo se eles est
     img = loadImage("exemplo.jpg");
     image(img, 0, 0);
     filter(THRESHOLD);
-    ```
+```
     
 GRAY: Converte as cores na imagem em equivalentes de escala de cinza. Nenhum parâmetro é usado.
 

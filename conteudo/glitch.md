@@ -19,7 +19,7 @@ saveBytes("outro_arquivo.dat", dados); // (nome do arquivo com extensão, array 
 ### Exemplo
 
 ```pde
-\\ Cria glitch a partir de arquivo flor.jpg na sub-pasta /data do sketch
+\\ Para criar imagem com glitch a partir de arquivo flor.jpg na sub-pasta /data 
 
 PImage flor;
 

@@ -9,7 +9,7 @@ Estamos acostumados com a ideia de cada pixel na tela ter uma posição X e Y nu
 Como os pixels aparecem:
 
 | 0 | 1 | 2 | 3 | 4 |
-| -!- | --- | --- | --- | --- |
+| -- | --- | --- | --- | --- |
 | **5** | **6** | **7** | **8** | **9** |
 | **10** | **11** | **12** | **13** | **14** |
 | **15** | **16** | **17** | **18** | **19** |
@@ -22,7 +22,9 @@ Como os pixels são armazenados:
 | --- | --- | --- | --- | --- | --- | --- |
 | |
 
-Imagens são armazenadas na memória como uma sequência
+### Acessandoos pixels numa posição X e Y
+
+Use `get()` para os pixels visveis na tela ou o método `.get()` em uma imagem `PImage`.
 
 ```pde
 PImage img;  // Declarando uma variável do tipo PImage
@@ -40,11 +42,105 @@ void draw() {
   ellipse(mouseX, mouseY, 100, 100); // desenha um círculo
 }
 
-// Para criar um novo objeto PImage (tipo de dados para armazenar imagens) vazio, fornecendo um buffer de pixels para manipular use createImage().
+```
+
+### Manipulando individualmente os pixels de uma imagem 
+
+O método `loadPixels()` dá acesso a um array contendo os pixels da imagem e `updatePixels()` atualiza na imagem modificações que tenham sido feitas no array.
+
+Use `createImage()` para criar um novo objeto `PImage` (tipo de dados para armazenar imagens) vazio, fornecendo assim um buffer de pixels que pode ser manipulado.
+
+```
 createImage(w, h, formato) // w (largura em pixels), h (altura em pixels),
        // formato (RGB, ARGB ou ALPHA: canal alpha em escala de cinzas)    
-
-loadPixels()  // dá acesso a um array contendo os pixels da imagem
-
-updatePixels() // atualiza na imagem modificações feitas no array
 ```
+
+```pde
+PImage img; // define um objeto PImage chamado imagem 
+PImage imgAux; // define um objeto PImage chamado imagem auxiliar
+
+void setup() { 
+  img = loadImage("flor.jpg"); // carrega uma imagem
+  imgAux = img; // carrega a imagem auxiliar
+  surface.setSize(img.width * 2, img.height); // defini o tamanho da tela
+}
+
+void draw() {
+  background(255);
+  image(img, 0, 0);
+  image(imgAux, img.width, 0);
+}
+
+void keyPressed() {
+
+  img.loadPixels();
+  imgAux.loadPixels();
+  PImage foto = createImage(img.width, img.height, RGB);
+  foto.loadPixels();
+
+  if (key == '1') {
+    int origem = img.width * img.height;
+    // multiplicar a largura pela altura para encontrar o último pixel
+    int destino = 0;   
+    for (int temp = origem-1; temp>=0; temp--) {
+    // origem -1 pq começamos contar do 0
+      foto.pixels[destino] = img.pixels[temp];
+      destino++;
+    }
+  }
+  imgAux = foto;
+  imgAux.updatePixels();
+}
+```
+
+## Filtros de imagem
+
+Processing oferece uma série de filtros prontos que podem ser aplicados em qualquer imagem. O comando filtro() aplica um filtro em uma imagem usando a sintaxe `filter(MODE);` ou `filter(MODE, level);`
+
+### Modos disponíveis como parâmetros de filter()
+
+THRESHOLD: Converte a imagem em pixels pretos ou brancos, dependendo se eles estão acima ou abaixo do limite definido pelo parâmetro de nível. O nível deve estar entre 0,0 (preto) e 1,0 (branco). Se nenhum nível for especificado, 0,5 será usado.
+```PImage img;
+    img = loadImage("exemplo.jpg");
+    image(img, 0, 0);
+    filter(THRESHOLD);```
+GRAY: Converte as cores na imagem em equivalentes de escala de cinza. Nenhum parâmetro é usado.
+INVERT: Define cada pixel para o seu valor inverso. Nenhum parâmetro é usado.
+POSTERIZE: Limita cada canal da imagem ao número de cores especificado como parâmetro. O parâmetro pode ser configurado para valores entre 2 e 255, mas os resultados são mais visíveis nos intervalos inferiores.
+BLUR: executa um borramento Gaussiano (n.t. Guassian blur), sendo que o parâmetro level especifica a extensão do borramento. Nos casos em que o parâmetro level não é utilizado, o borramento equivalente a um borramento gaussiano de raio 1.
+OPAQUE: Define o canal alfa de forma totalmente opaca. Nenhum parâmetro é usado.
+ERODE: Reduz as áreas de luz. Nenhum parâmetro é usado.
+DILATE: Aumenta as áreas de luz. Nenhum parâmetro é usado.
+
+# Manipulação de bits em Pixels
+
+O valor de um pixel é representado no Processing (e no Java) como um número inteiro. Nesse sentido, uma imagem digital é um array de números inteiros, como vimos acima. Um inteiro é composto de 32 bits ou 4 bytes para armazenar a informação sobre a cor dos pixels. Especificamente, o primeiro byte (ou seja, 8 bits - um número entre 0 and 255) armazena o grau de transparência (canal alpha), o segundo byte para vermelho, terceiro byte para verde e o quarto byte para azul. Esquematicamente, os bits de inteiros, representando um pixel, aparecem assim:
+
+
+| Alpha | Vermelho | Verde | Azul |
+| -  | -  | - | - | - |
+| 00000000 | 00000000 |  00000000 | 00000000 |
+
+Esses valores podem ser manipulados com "bit shifting". Isso significa que para acessar uma cor, nós precisamos mexer no nível dos bits para extrair os 8 bits específicos que desejamos.  
+
+# Pixel Arte
+
+O termo pixel arte foi utilizado pela primeira vez por Adele Goldberg e Robert Flegal no "Xerox Palo Alto Research Center" em 1982.
+
+Atualmente, podemos entender pixel arte como uma forma de arte digital, criada através do uso de software, na qual a imagem é editado no nível do pixel.
+
+A maioria dos gráficos de 8-bit e 16-bit para computadores e vídeo games, assim como outros sistemas gráficos limitados, podem ser entendidos como pixel arte. 
+
+O experimento Place no Reddit
+http://sudoscript.com/reddit-place/
+
+[Minimalist Pixel Art](http://knowyourmeme.com/memes/minimalist-pixel-art)
+
+[Passage](http://hcsoftware.sourceforge.net/passage/), por Jason Rohrer
+"Uma vez que eu comecei a usar pixel arte, eu percebi como ela era poderosa. Bem, antes de tudo, ela parece algo que veio de um computador, ela não tenta emular qualquer estilo visual de qualquer outro medium. Em segundo lugar, ela pode ser representativa (figurativa) mas ao mesmo tempo é suficientemente abstrata para deixar lugar para interpretação".
+Livre tradução da entrevista de Jason Rohrer a respeito do jogo Passage para o documentário [Pixel art a documentary](https://www.youtube.com/watch?v=7mqAZ06dwKU), de Simon Cottee.
+
+
+
+
+

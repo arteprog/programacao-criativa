@@ -8,17 +8,19 @@ Gaulon diz “O glitch digital [...] é uma forma de ver o código por trás de 
 ### Como ler e escrever bytes em um arquivo
 
 ```pde
-loadBytes() // Abre um arquivo e lê os seus dados binários 
-byte b[] = loadBytes("arquivo.jpg");
+// Para abrir um arquivo e ler seus dados use loadBytes() 
+byte b[] = loadBytes("arquivo.jpg");  // b[] é um array de bytes
 
+// Para escrever dados em um arquivo useBytes()
 byte[] dados = { 0, 34, 5, 127, 52};
-saveBytes("outro_arquivo.dat", dados); // Escreve os dados no arquivo
-                             // (arquivo com extensão, array de dados)    
+saveBytes("outro_arquivo.dat", dados); // (nome do arquivo com extensão, array de dados)                                 
 ```
 
 ### Exemplo
 
 ```pde
+\\ Cria glitch a partir de arquivo flor.jpg na sub-pasta /data do sketch
+
 PImage flor;
 
 void setup() {
@@ -27,13 +29,13 @@ void setup() {
 }
 
 void draw() {
-  byte[] data=loadBytes("flor.jpg");
+  byte[] data=loadBytes("flor.jpg");    \\ carrega a imagem original
 
-  int loc=(int)random(1, data.length);
-  data[loc]=(byte)random(255);
+  int loc=(int)random(1, data.length);  \\ sorteia uma posição no array
+  data[loc]=(byte)random(255);          \\ sorteia um valor de byte e substitui
 
-  saveBytes("flor1.jpg", data);
-  flor = loadImage("flor1.jpg");
+  saveBytes("flor1.jpg", data);         \\ salva um novo arquivo modificado
+  flor = loadImage("flor1.jpg");        \\ carrega a imagem modificada
   image (flor, width/2, height/2, 600, 370);
 }
 ```

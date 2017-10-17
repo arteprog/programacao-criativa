@@ -18,8 +18,8 @@ Como os pixels aparecem:
 
 Como os pixels são armazenados:
 
-| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |  ... | 24 |
-| --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | ... | 24 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
 | |
 
 ### Acessando os pixels numa posição X e Y
@@ -126,7 +126,7 @@ O valor de um pixel é representado no Processing (e no Java) como um número in
 
 
 | Alpha | Vermelho | Verde | Azul |
-| ---  | ---  | --- | --- | --- |
+| ---  | ---  | --- | --- |
 | 00000000 | 00000000 |  00000000 | 00000000 |
 
 Esses valores podem ser manipulados com "bit shifting". Isso significa que para acessar uma cor, nós precisamos mexer no nível dos bits para extrair os 8 bits específicos que desejamos.  

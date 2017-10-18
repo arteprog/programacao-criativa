@@ -19,7 +19,8 @@ saveBytes("outro_arquivo.dat", dados); // (nome do arquivo com extensão, array 
 ### Exemplo
 
 ```pde
-\\ Para criar imagem com glitch a partir de arquivo flor.jpg na sub-pasta /data 
+// Para criar imagem com glitch a partir de 
+// arquivo flor.jpg na sub-pasta /data 
 
 PImage flor;
 
@@ -29,13 +30,13 @@ void setup() {
 }
 
 void draw() {
-  byte[] data=loadBytes("flor.jpg");    \\ carrega a imagem original
+  byte[] data=loadBytes("flor.jpg");    // carrega a imagem original
 
-  int loc=(int)random(1, data.length);  \\ sorteia uma posição no array
-  data[loc]=(byte)random(255);          \\ sorteia um valor de byte e substitui
+  int loc=(int)random(1, data.length);  // sorteia uma posição no array
+  data[loc]=(byte)random(255);          // sorteia um valor de byte e substitui
 
-  saveBytes("flor1.jpg", data);         \\ salva um novo arquivo modificado
-  flor = loadImage("flor1.jpg");        \\ carrega a imagem modificada
+  saveBytes("flor1.jpg", data);         // salva um novo arquivo modificado
+  flor = loadImage("flor1.jpg");        // carrega a imagem modificada
   image (flor, width/2, height/2, 600, 370);
 }
 ```

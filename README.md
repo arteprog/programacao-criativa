@@ -36,7 +36,7 @@ O curso introdutório Programação Criativa, visa promover a familiarização d
 9. [Aleatoriedade](/conteudo/numeros-aleatorios.md)
 10. [Laços de repetição](/conteudo/lacos.md)
 11. [Translação e rotação](/conteudo/translacao-rotacao.md)
-12. Data arte
+12. [Data arte]
 13. [Tipagem](/conteudo/tipagem.md)
 14. [Escopo](/conteudo/escopo.md)
 15. [Arrays](/conteudo/arrays.md)

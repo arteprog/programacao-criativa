@@ -2,7 +2,7 @@
 
 ![intro](/assets/imagens/intro.jpg)
 
-O curso introdutório Programação Criativa, visa promover a familiarização dos participantes com a arte computacional por meio de aulas práticas, usando Processing, plataforma de programação em código aberto amplamente utilizada por artistas, assim como estimular a reflexão a partir da análise de obras e leituras sobre o assunto. 
+O curso introdutório Programação Criativa, visa promover a familiarização dos participantes com a arte computacional por meio de aulas práticas, usando Processing, plataforma de programação em código aberto amplamente utilizada por artistas, assim como estimular a reflexão a partir da análise de obras e leituras sobre o assunto. 
 
 ## Objetivos do curso
 
@@ -30,9 +30,16 @@ O curso introdutório Programação Criativa, visa promover a familiarização
 3. [Interação](/conteudo/interacao.md)
 4. [Condicionais](/conteudo/condicionais.md)
 5. [Input](/conteudo/input.md)
-6. [Arte Gerativa](/conteudo/funcoes.md)
+6. [Arte Gerativa]
 7. [Funções](/conteudo/funcoes.md)
 8. [Variáveis, parâmetros e tipos](/conteudo/tipagem.md)
 9. [Aleatoriedade](/conteudo/numeros-aleatorios.md)
 10. [Laços de repetição](/conteudo/lacos.md)
 11. [Translação e rotação](/conteudo/translacao-rotacao.md)
+12. Data arte
+13. [Tipagem](/conteudo/tipagem.md)
+14. [Escopo](/conteudo/escopo.md)
+15. [Arrays](/conteudo/arrays.md)
+16. [Tabelas](/conteudo/tabelas.md)
+17. [Pixel arte](/conteudp/pixel-arte.md)
+18. [Pixels e imagens](/conteudo/pixels-e-imagens.md)

@@ -1,15 +1,17 @@
-/* Versão do código da casa que soma a posição nas coordenadas dos objetos. */
+Versão do código da casa que soma a posição nas coordenadas dos objetos.
 
+```pde
 void house(int x, int y)
 {
   triangle(x + 15, y, x, y + 15, x + 30, y + 15);
   rect(x, y + 15, 30, 30);
   rect(x + 12, y + 30, 10, 15);
 }
+```
 
+Compare com esta versão que usa o translate(). Neste caso o código desenha a casa sempre no mesmo lugar, no ponto (0, 0), e deixa a translação fazer o trabalho! */
 
-/*Compare com esta versão que usa o translate(). Neste caso o código desenha a casa sempre no mesmo lugar, no ponto (0, 0), e deixa a translação fazer o trabalho! */
-
+```pde
 void house(int x, int y) 
 {
   pushMatrix();
@@ -19,3 +21,4 @@ void house(int x, int y)
   rect(12, 30, 10, 15);
   popMatrix();
 }
+```

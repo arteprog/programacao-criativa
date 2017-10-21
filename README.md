@@ -41,5 +41,5 @@ O curso introdutório Programação Criativa, visa promover a familiarização d
 14. [Escopo](/conteudo/escopo.md)
 15. [Arrays](/conteudo/arrays.md)
 16. [Tabelas](/conteudo/tabelas.md)
-17. [Pixel arte](/conteudp/pixel-arte.md)
+17. [Pixel arte](/conteudo/pixel-arte.md)
 18. [Pixels e imagens](/conteudo/pixels-e-imagens.md)

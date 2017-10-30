@@ -58,7 +58,9 @@ Copie o arquivo descompactado **.otf*** da fonte [Garoa Hacker Clube Bold](https
 
 ```pde
 PFont f;
-String meuString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#$*&";
+String meuString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ☂#$*&";
+int numLetras = meuString.length(); 
+int passo = 25;
 
 void setup() {
   size(640, 360);
@@ -74,8 +76,6 @@ void setup() {
 
 void draw() {
   background(0);
-  int passo = 25;
-  int numLetras = meuString.length(); 
   for (int y = 12; y <= height-12; y += passo) {
     for (int x = 12; x <= width-12; x += passo) {
       int sorteio = int(random(numLetras));

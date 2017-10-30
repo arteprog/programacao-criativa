@@ -36,7 +36,7 @@ void draw() {
 }
 ```
 
-## Definindo uma fonte
+## Definindo a fonte
 
 Se não indicarmos uma fonte, uma padrão será usada, mas podemos criar uma nova fonte e usar com uma variável `PFont` em `textFont()`, a partir de uma fonte já instalada ou de um arquivo vetorial **.ttf** ou **.otf** na pasta **/data** :
 

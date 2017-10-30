@@ -36,6 +36,8 @@ void draw() {
 }
 ```
 
+## Definindo uma fonte
+
 Se não indicarmos uma fonte, uma padrão será usada, mas podemos criar uma nova fonte e usar com uma variável `PFont` em `textFont()`, a partir de uma fonte já instalada ou de um arquivo vetorial **.ttf** ou **.otf** na pasta **/data** :
 
 ```pde
@@ -52,6 +54,8 @@ font = loadFont("LetterGothicStd-32.vlw");
 
 ## Uma grade de letras, símbolos, glifos!
 
+Copie o arquivo descompactado **.otf*** da fonte [Garoa Hacker Clube Bold](https://garoa.net.br/wiki/Fonte_Garoa_Hacker_Clube_Bold) na sub-pasta **/data** do seu sketch.
+
 ```pde
 PFont f;
 String meuString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#$*&";
@@ -60,34 +64,42 @@ void setup() {
   size(640, 360);
   background(0);
   printArray(PFont.list());     // lista de fontes instaladas no computador
-  // f = createFont("Bitstream Vera Sans Mono Bold", 24);  // cria uma fonte Pfont
-  // textFont(f);                // Indica a fonte que vai ser usada
+  // "Descomente" as duas linhas abaixo caso tenha copiado a fonte na pasta /data
+  // f = createFont("GaroaHackerClubeBold.otf", 24); 
+  // textFont(f);
   textAlign(CENTER, CENTER); // Alinhamento horizontal e vertical
   textSize(24);             // Tamanho do texto
-  noLoop();  // Este exemplo para a repetiçao do draw()...
+  noLoop();  // Este exemplo desliga a repetiçao do draw()...
 }
 
 void draw() {
   background(0);
   int passo = 25;
+  int numLetras = meuString.length(); 
   for (int y = 12; y <= height-12; y += passo) {
-	for (int x = 12; x <= width-12; x += passo) {
-  	int sorteio = int(random(30));
-  	char umChar = meuString.charAt(sorteio);
-  	if (umChar == 'A' || umChar == 'E' || umChar == 'I'
-                         || umChar == 'O' || umChar == 'U') {
-    	fill(255, 204, 0);
-  	} else {
-    	fill(255);
-  	}
-  	// Desenha a letra na tela
-  	text(umChar, x, y);
-	}
+    for (int x = 12; x <= width-12; x += passo) {
+      int sorteio = int(random(numLetras));
+      char umChar = meuString.charAt(sorteio);
+      if (umChar == 'A' || umChar == 'E' || umChar == 'I'
+        || umChar == 'O' || umChar == 'U') {
+        fill(255, 204, 0);
+      } else {
+        fill(255);
+      }
+      // Desenha a letra na tela
+      text(umChar, x, y);
+    }
   }
 }
 
-```
+void mousePressed() {
+  loop();
+}
 
+void mouseReleased() {
+  noLoop();
+}
+```
 
 ## Bibliografia
 

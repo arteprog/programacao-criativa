@@ -2,7 +2,9 @@
 
 ## Trabalhando com fontes e texto no Processing
 
-Usamos `text("loren ipso", x, y)` para escrever um texto na área de desenho. O tamanho pode ser controlado, em pontos por `textSize()`.
+Usamos `text("Lorem Ipsum dolor", x, y)` para escrever um texto na área de desenho.
+
+O tamanho pode ser controlado, em pontos por `textSize()`. O alinhamento pode ser alterado por `textAlign()`. A cor vem do `fill()`.
 
 ## Exemplos
 
@@ -16,6 +18,7 @@ float y = 60;
 void setup() {
   size(100, 100);
   textSize(12);
+  textAlign(CENTER, BOTTOM); // pode ser usado LEFT, RIGHT no primeiro parâmetro e CENTER ou TOP no segundo
   noStroke();
 }
 
@@ -33,27 +36,23 @@ void draw() {
 }
 ```
 
-Se não indicarmos uma fonte, uma padrão será usada, mas podemos carregar em uma `PFont` para usar em `textFont()` uma fonte já instalada:
+Se não indicarmos uma fonte, uma padrão será usada, mas podemos carregar em uma variável `PFont` para usar em `textFont()` uma fonte já instalada ou a partir de uma fonte vetorial **.ttf** ou** .otf** na pasta **/data** :
 
 ```pde
 printArray(PFont.list());
 f = createFont("Bitstream Vera Sans Mono Bold", 24);
 textFont(f);
 ```
-Podemos criar uma PFont a partir de uma fonte vetorial **.ttf** ou** .otf** na pasta **/data**
+
+Especialmente no caso de não termos permissão para distribuir o arquivo vetorial da fonte, podemos criar uma fonte bitmap a partir da fonte original e distribuir este novo arquivo, na pasta **/data**. Usando a ferramenta **Tool > Create Font...** produzimos um arquivo **.vlw** que pode ser carregado numa variável `PFont`:
 
 ```pde
-
-
+font = loadFont("LetterGothicStd-32.vlw");
 ```
 
-Ou ainda, podemos criar uma fonte bitmap a partir de uma fonte vetorial e a partir dela carregar uma PFont, usando a ferramenta **Tool > Create Font...**
-
-## Exemplo 2
+## Uma grade de letras, símbolos, glifos!
 
 ```pde
-/* Uma grade de letras, símbolos, glifos! */
-
 PFont f;
 String meuString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#$*&";
 

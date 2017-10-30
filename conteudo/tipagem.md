@@ -39,12 +39,15 @@ color corSorteada(int alpha) {
 
 | tipo | descrição |
 | --- | --- |
-|`int`  |  número inteiro, como `-5`, `0` ou `42`
-| `float`  | número com ponto flutante, como `.5` `3.` ou `6.267` (note que o separador decimal é o ponto)
-| `boolean` |  valores `true` ou `false`
-| `char`| uma letra ou glifo UNICODE, como `'a'` (note as aspas simples)
-| `color`  |  armazena uma cor, que pode ser construída com `color(R,G,B)` ou `color(R,G,B,Alfa)`
-| `void`| o "vazio" é o tipo das funções que nada retornam
+|`int`  |  número inteiro, como `-5`, `0` ou `42`|
+| void| o "vazio" é o tipo das funções que nada retornam
+| `float`  | número com ponto flutante, como `.5` `3.` ou `6.267` (note que o separador decimal é o ponto)|
+| `boolean` |  valores `true` ou `false`|
+| `char`| uma letra ou glifo UNICODE, como `'a'` (note as aspas simples)|
+| `color`  |  armazena uma cor, que pode ser construída com `color(R,G,B)` ou `color(R,G,B,Alfa)`|
+| long |  números inteiros maiores (armazenados em  64 bits, enquanto `int` tem 32 bits)|
+| double |  números com ponto flutuante maiores (armazenados em  64 bits, enquanto `float` tem 32 bits)|
+
 
 ### Alguns tipos de objetos/classes 
 

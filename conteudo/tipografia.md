@@ -4,9 +4,9 @@
 
 Usamos `text("Lorem Ipsum dolor", x, y)` para escrever um texto na área de desenho.
 
-O tamanho pode ser controlado, em pontos por `textSize()`. O alinhamento pode ser alterado por `textAlign()`. A cor vem do `fill()`.
+O tamanho pode ser controlado, em pontos, por `textSize()`. O alinhamento pode ser alterado por `textAlign()`. A cor vem do `fill()`.
 
-## Exemplos
+### Exemplo básico
 
 ```pde
 /* Adaptado do tutorial
@@ -36,7 +36,7 @@ void draw() {
 }
 ```
 
-Se não indicarmos uma fonte, uma padrão será usada, mas podemos carregar em uma variável `PFont` para usar em `textFont()` uma fonte já instalada ou a partir de uma fonte vetorial **.ttf** ou** .otf** na pasta **/data** :
+Se não indicarmos uma fonte, uma padrão será usada, mas podemos criar uma nova fonte e usar com uma variável `PFont` em `textFont()`, a partir de uma fonte já instalada ou de um arquivo vetorial **.ttf** ou **.otf** na pasta **/data** :
 
 ```pde
 printArray(PFont.list());
@@ -44,7 +44,7 @@ f = createFont("Bitstream Vera Sans Mono Bold", 24);
 textFont(f);
 ```
 
-Especialmente no caso de não termos permissão para distribuir o arquivo vetorial da fonte, podemos criar uma fonte bitmap a partir da fonte original e distribuir este novo arquivo, na pasta **/data**. Usando a ferramenta **Tool > Create Font...** produzimos um arquivo **.vlw** que pode ser carregado numa variável `PFont`:
+Especialmente no caso de não termos permissão para distribuir o arquivo vetorial da fonte, podemos criar uma fonte bitmap a partir da original e distribuir este novo arquivo **.vlw***, na pasta **/data**. Usando a ferramenta **Tool > Create Font...** produzimos o arquivo da fonte que pode ser carregado numa variável `PFont` da seguinte maneira:
 
 ```pde
 font = loadFont("LetterGothicStd-32.vlw");
@@ -87,7 +87,6 @@ void draw() {
 }
 
 ```
-
 
 
 ## Bibliografia

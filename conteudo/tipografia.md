@@ -46,7 +46,7 @@ f = createFont("Bitstream Vera Sans Mono Bold", 24);
 textFont(f);
 ```
 
-Especialmente no caso de não termos permissão para distribuir o arquivo vetorial da fonte, podemos criar uma fonte bitmap a partir da original e distribuir este novo arquivo **.vlw***, na pasta **/data**. Usando a ferramenta **Tool > Create Font...** produzimos o arquivo da fonte que pode ser carregado numa variável `PFont` da seguinte maneira:
+Especialmente no caso de não termos permissão para distribuir o arquivo vetorial da fonte, podemos criar uma fonte bitmap a partir da original e distribuir este novo arquivo **.vlw**, na pasta **/data**. Usando a ferramenta **Tool > Create Font...** produzimos o arquivo da fonte que pode ser carregado numa variável `PFont` da seguinte maneira:
 
 ```pde
 font = loadFont("LetterGothicStd-32.vlw");

@@ -64,6 +64,7 @@ Modo(s)	Single-player
 
 ## [Inflorescence city](http://inflorescence.city)
 Katie Rose Pipkin e Loren Schmidt.
+
 Viaje por uma paisagem sem fim e visite cidades imaginárias.
 
 ![info](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/inflorescense.jpg?raw=true)
@@ -82,7 +83,7 @@ Uma das principais razões pela qual a arte ASCII nasceu foi porque as primeiras
 
 Entre os mais antigos exemplos conhecidos da arte ASCII estão as criações do pioneiro da arte do computador, Kenneth Knowlton, de 1966, que trabalhava para o Bell Labs na época. "Estudos na Percepção I" de [Ken Knowlton](http://www.kenknowlton.com) e Leon Harmon de 1966 mostram alguns exemplos de suas primeiras artes ASCII.
 
-
+![ken](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/knowlton-all-artworks-studies-in-perception-i--dam-11278-a77DO-de-2.jpg?raw=true)
 
 ###### Studies in Perception I 1966 
 
@@ -90,4 +91,4 @@ Entre os mais antigos exemplos conhecidos da arte ASCII estão as criações do 
 
 Emoticons - um emoticon - emotion (emoção) + icon (ícone) - é uma sequência de caracteres tipográficos que representam um estado emocional.
 
-Ver também: jogo Rogue, Charles Gaines
+Ver também: Rogue, Charles Gaines

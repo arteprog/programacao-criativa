@@ -22,23 +22,36 @@ Trabalhou com o Prof. Giorgio Moscati no Departamento de Física Nuclear - USP, 
 Processo: dividir arbitrariamente a imagem em uma grade. Enumerar os pontos de 1 a 7 (do preto ao branco). 
 
 Impressora:
+
 1 /ZXMHO
+
 2 /ZXMH
+
 3 /ZXM
+
 4 /ZX
+
 5 /Z
+
 6 /
+
 7 em branco
 
 ## Dwarf Fortress
 É um jogo com gráficos baseados em texto. Antes de jogar, o jogador gera mundo com continentes, oceanos, civilizações e história documentada.
 
 Desenvolvedor(s) Tarn Adams
+
 Editor(s)	Bay 12 Games
+
 Designer(s)	Tarn Adams e Zach Adams
+
 Plataforma(s)	Windows, Mac OS X, Linux
+
 Lançamento	8 August 2006
+
 Gênero(s)	Simulação de construção e gestão
+
 Modo(s)	Single-player
 
 

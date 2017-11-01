@@ -54,6 +54,8 @@ font = loadFont("LetterGothicStd-32.vlw");
 
 ## Uma grade de letras, símbolos, glifos!
 
+![grade](/assets/imagens/typogrid.png)
+
 Copie o arquivo descompactado **.otf*** da fonte [Garoa Hacker Clube Bold](https://garoa.net.br/wiki/Fonte_Garoa_Hacker_Clube_Bold) na sub-pasta **/data** do seu sketch.
 
 ```pde

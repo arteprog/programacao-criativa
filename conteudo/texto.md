@@ -89,6 +89,6 @@ Entre os mais antigos exemplos conhecidos da arte ASCII estão as criações do 
 
 ###### Leon Harmon e Kenneth C Knowlton
 
-Emoticons - um emoticon - emotion (emoção) + icon (ícone) - é uma sequência de caracteres tipográficos que representam um estado emocional.
+[Emoticons](https://en.wikipedia.org/wiki/List_of_emoticons) - um emoticon - emotion (emoção) + icon (ícone) - é uma sequência de caracteres tipográficos que representam um estado emocional.
 
-Ver também: Rogue, Charles Gaines
+Ver também: (Caligraft)[http://caligraft.com], Rogue, Charles Gaines, Zork.

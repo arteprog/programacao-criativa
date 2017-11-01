@@ -1,23 +1,25 @@
-Texto e tipografia
+# Texto
 
-Waldemar Cordeiro (Roma, Itália 1925 - São Paulo, São Paulo, 1973)
+## Waldemar Cordeiro (Roma, Itália 1925 - São Paulo, São Paulo, 1973)
 
 A partir de 1968 passa a se dedicar à investigação das possibilidades de utilização artística do computador. Ele via a arte eletrônica como uma consequência lógica da arte concreta.
 Arteônica foi o neologismo criado por Cordeiro a partir da fusão das palavras arte + eletrônica para designar o resultado de suas novas pesquisas artísticas. 
 Trabalhou com o Prof. Giorgio Moscati no Departamento de Física Nuclear - USP, quando realizaram juntos os trabalhos Beabá e Derivadas de uma imagem. 
 
-Beabá - a partir de um programa gerador de combinações probabilísticas entre letras. 
+[Beabá](http://www5.usp.br/18320/giorgio-moscati-e-waldemar-cordeiro-quando-o-computador-encontrou-a-arte/) - a partir de um programa gerador de combinações probabilísticas entre letras. 
 
-Computador: IBM 360/44
-Programado em FORTRAN IV por Giorgio Moscati
-Produzido na Universidade de São Paulo
+![beaba](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/beaba.jpg?raw=true)
+###### Computador: IBM 360/44
+###### Programado em FORTRAN IV por Giorgio Moscati
+###### Produzido na Universidade de São Paulo
 
-Derivadas de uma imagem - geração de imagens derivadas de uma fotografia usada como matriz.
+[Derivadas de uma imagem](https://www.visgraf.impa.br/Gallery/waldemar/catalogo/catalogo.pdf) - geração de imagens derivadas de uma fotografia usada como matriz.
 
-Waldemar Cordeiro and Giorgio Moscati, Derivadas de Uma Imagem, 1969. (a) Grau zero, 47 x 34.5 cm. (b) Grau um, 47 x 34.5 cm. (c) Grau dois, 47 x 34.5 cm. Executado em um IBM 360/44.
+![derivada](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/derivada.jpg?raw=true)
+
+###### Waldemar Cordeiro and Giorgio Moscati, Derivadas de Uma Imagem, 1969. (a) Grau zero, 47 x 34.5 cm. (b) Grau um, 47 x 34.5 cm. (c) Grau dois, 47 x 34.5 cm. Executado em um IBM 360/44.
 
 Processo: dividir arbitrariamente a imagem em uma grade. Enumerar os pontos de 1 a 7 (do preto ao branco). 
-
 
 Impressora:
 1 /ZXMHO
@@ -27,7 +29,8 @@ Impressora:
 5 /Z
 6 /
 7 em branco
-Dwarf Fortress
+
+## Dwarf Fortress
 É um jogo com gráficos baseados em texto. Antes de jogar, o jogador gera mundo com continentes, oceanos, civilizações e história documentada.
 
 Desenvolvedor(s) Tarn Adams

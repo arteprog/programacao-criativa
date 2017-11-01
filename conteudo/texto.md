@@ -54,15 +54,15 @@ Gênero(s)	Simulação de construção e gestão
 
 Modo(s)	Single-player
 
+![df1](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/WorldGenerationScreen.png?raw=true)
 
-Um mundo em geração.
+###### Um mundo em geração.
 
+![df2](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/Dwarf_Fortress_embark_scene.png?raw=true)
 
+###### O jogo usa símbolos de texto para gráficos. Por exemplo, um gato é um 'c' branco e uma cachorro é um 'd' marron. 
 
-
-O jogo usa símbolos de texto para gráficos. Por exemplo, um gato é um 'c' branco e uma cachorro é um 'd' marron. 
-
-Inflorescence city
+## Inflorescence city
 Katie Rose Pipkin e Loren Schmidt.
 Viaje por uma paisagem sem fim e visite cidades imaginárias.
 

@@ -37,7 +37,7 @@ Impressora:
 
 7 em branco
 
-## Dwarf Fortress
+## [Dwarf Fortress](http://dwarffortresswiki.org/index.php/Main_Page)
 É um jogo com gráficos baseados em texto. Antes de jogar, o jogador gera mundo com continentes, oceanos, civilizações e história documentada.
 
 Desenvolvedor(s) Tarn Adams
@@ -62,29 +62,31 @@ Modo(s)	Single-player
 
 ###### O jogo usa símbolos de texto para gráficos. Por exemplo, um gato é um 'c' branco e uma cachorro é um 'd' marron. 
 
-## Inflorescence city
+## [Inflorescence city](http://inflorescence.city)
 Katie Rose Pipkin e Loren Schmidt.
 Viaje por uma paisagem sem fim e visite cidades imaginárias.
 
-Star Wars asciimation
+![info](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/inflorescense.jpg?raw=true)
+
+## Star Wars [asciimation](http://www.asciimation.co.nz)
 
 No terminal: telnet towel.blinkenlights.nl
 
-
-
-
+![starwars](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/starwars.jpg?raw=true)
 
 ASCII (do inglês American Standard Code for Information Interchange; "Código Padrão Americano para o Intercâmbio de Informação") é um código binário (cadeias de bits: 0s e 1s) que codifica um conjunto de 128 sinais: 95 sinais gráficos (letras do alfabeto latino, sinais de pontuação e sinais matemáticos) e 33 sinais de controle, utilizando portanto apenas 7 bits para representar todos os seus símbolos[1].
 
 ASCII art consiste em imagens construídas com os 95 caracteres imprimíveis (de um total de 128) definidos pelo ASCII Standard de 1963 e conjuntos de caracteres compatíveis com ASCII com caracteres estendidos proprietários (além dos 128 Caracteres do ASCII padrão de 7 bits). O termo também pode ser usado para referir a arte visual baseada em texto em geral. ASCII art pode ser criada com qualquer editor de texto.
 
-Uma das principais razões pela qual a arte ASCII nasceu foi porque as primeiras impressoras muitas vezes não possuíam capacidade gráfica e, portanto, os caracteres eram usados ​​em lugar de marcas gráficas. ASCII art também foi usado no e-mail inicial quando as imagens não podiam ser incorporadas.
+Uma das principais razões pela qual a arte ASCII nasceu foi porque as primeiras impressoras muitas vezes não possuíam capacidade gráfica e, portanto, os caracteres eram usados em lugar de marcas gráficas. ASCII art também foi usado no e-mail inicial quando as imagens não podiam ser incorporadas.
 
-Entre os mais antigos exemplos conhecidos da arte ASCII estão as criações do pioneiro da arte do computador, Kenneth Knowlton, de 1966, que trabalhava para o Bell Labs na época. "Estudos na Percepção I" de Ken Knowlton e Leon Harmon de 1966 mostram alguns exemplos de suas primeiras artes ASCII.
+Entre os mais antigos exemplos conhecidos da arte ASCII estão as criações do pioneiro da arte do computador, Kenneth Knowlton, de 1966, que trabalhava para o Bell Labs na época. "Estudos na Percepção I" de [Ken Knowlton](http://www.kenknowlton.com) e Leon Harmon de 1966 mostram alguns exemplos de suas primeiras artes ASCII.
 
 
-Studies in Perception I 1966 
-Leon Harmon e Kenneth C Knowlton
+
+###### Studies in Perception I 1966 
+
+###### Leon Harmon e Kenneth C Knowlton
 
 Emoticons - um emoticon - emotion (emoção) + icon (ícone) - é uma sequência de caracteres tipográficos que representam um estado emocional.
 

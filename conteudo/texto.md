@@ -13,7 +13,7 @@ Trabalhou com o Prof. Giorgio Moscati no Departamento de Física Nuclear - USP, 
 ###### Programado em FORTRAN IV por Giorgio Moscati
 ###### Produzido na Universidade de São Paulo
 
-[Derivadas de uma imagem](https://www.visgraf.impa.br/Gallery/waldemar/catalogo/catalogo.pdf) - geração de imagens derivadas de uma fotografia usada como matriz.
+[Derivadas de uma imagem](programacao-criativa/assets/referencias/arteonica.pdf) - geração de imagens derivadas de uma fotografia usada como matriz.
 
 ![derivada](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/derivada.jpg?raw=true)
 

@@ -66,12 +66,12 @@ void setup() {
   size(640, 360);
   background(0);
   printArray(PFont.list());     // lista de fontes instaladas no computador
-  // "Descomente" as duas linhas abaixo caso tenha copiado a fonte na pasta /data
-  // f = createFont("GaroaHackerClubeBold.otf", 24); 
-  // textFont(f);
+  // Copie a fonte GaroaHackerClubeBold.otf na pasta /data e substitua o String "Monaco" abaixo
+  f = createFont("Monaco", 24); 
+  textFont(f);
   textAlign(CENTER, CENTER); // Alinhamento horizontal e vertical
-  textSize(24);             // Tamanho do texto
-  noLoop();  // Este exemplo desliga a repetiçao do draw()...
+  textSize(24);              // Tamanho do texto
+  noLoop();  // Este exemplo inicialmente desliga a repetiçao do draw()...
 }
 
 void draw() {
@@ -82,9 +82,9 @@ void draw() {
       char umChar = meuString.charAt(sorteio);
       if (umChar == 'A' || umChar == 'E' || umChar == 'I'
         || umChar == 'O' || umChar == 'U') {
-        fill(255, 204, 0);
+        fill(255, 0, 255);
       } else {
-        fill(255);
+        fill(0, 255, 0);
       }
       // Desenha a letra na tela
       text(umChar, x, y);

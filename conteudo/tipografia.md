@@ -2,9 +2,11 @@
 
 ## Trabalhando com fontes e texto no Processing
 
-Usamos `text("loren ipso", x, y)` para escrever um texto na área de desenho. O tamanho pode ser controlado, em pontos por `textSize()`.
+Usamos `text("Lorem Ipsum dolor", x, y)` para escrever um texto na área de desenho.
 
-## Exemplos
+O tamanho pode ser controlado, em pontos, por `textSize()`. O alinhamento pode ser alterado por `textAlign()`. A cor vem do `fill()`.
+
+### Exemplo básico
 
 ```pde
 /* Adaptado do tutorial
@@ -16,6 +18,7 @@ float y = 60;
 void setup() {
   size(100, 100);
   textSize(12);
+  textAlign(CENTER, BOTTOM); // pode ser usado LEFT, RIGHT no primeiro parâmetro e CENTER ou TOP no segundo
   noStroke();
 }
 
@@ -33,63 +36,72 @@ void draw() {
 }
 ```
 
-Se não indicarmos uma fonte, uma padrão será usada, mas podemos carregar em uma `PFont` para usar em `textFont()` uma fonte já instalada:
+## Definindo a fonte
+
+Se não indicarmos uma fonte, uma padrão será usada, mas podemos criar uma nova fonte e usar com uma variável `PFont` em `textFont()`, a partir de uma fonte já instalada ou de um arquivo vetorial **.ttf** ou **.otf** na pasta **/data** :
 
 ```pde
 printArray(PFont.list());
 f = createFont("Bitstream Vera Sans Mono Bold", 24);
 textFont(f);
 ```
-Podemos criar uma PFont a partir de uma fonte vetorial **.ttf** ou** .otf** na pasta **/data**
+
+Especialmente no caso de não termos permissão para distribuir o arquivo vetorial da fonte, podemos criar uma fonte bitmap a partir da original e distribuir este novo arquivo **.vlw**, na pasta **/data**. Usando a ferramenta **Tool > Create Font...** produzimos o arquivo da fonte que pode ser carregado numa variável `PFont` da seguinte maneira:
 
 ```pde
-
-
+font = loadFont("LetterGothicStd-32.vlw");
 ```
 
-Ou ainda, podemos criar uma fonte bitmap a partir de uma fonte vetorial e a partir dela carregar uma PFont, usando a ferramenta **Tool > Create Font...**
+## Uma grade de letras, símbolos, glifos!
 
-## Exemplo 2
+![grade](/assets/imagens/typogrid.png)
+
+Copie o arquivo descompactado **.otf*** da fonte [Garoa Hacker Clube Bold](https://garoa.net.br/wiki/Fonte_Garoa_Hacker_Clube_Bold) na sub-pasta **/data** do seu sketch.
 
 ```pde
-/* Uma grade de letras, símbolos, glifos! */
-
 PFont f;
-String meuString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#$*&";
+String meuString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ☂#$*&";
+int numLetras = meuString.length(); 
+int passo = 25;
 
 void setup() {
   size(640, 360);
   background(0);
   printArray(PFont.list());     // lista de fontes instaladas no computador
-  // f = createFont("Bitstream Vera Sans Mono Bold", 24);  // cria uma fonte Pfont
-  // textFont(f);                // Indica a fonte que vai ser usada
+  // Copie a fonte GaroaHackerClubeBold.otf na pasta /data e substitua o String "Monaco" abaixo
+  f = createFont("Monaco", 24); 
+  textFont(f);
   textAlign(CENTER, CENTER); // Alinhamento horizontal e vertical
-  textSize(24);             // Tamanho do texto
-  noLoop();  // Este exemplo para a repetiçao do draw()...
+  textSize(24);              // Tamanho do texto
+  noLoop();  // Este exemplo inicialmente desliga a repetiçao do draw()...
 }
 
 void draw() {
   background(0);
-  int passo = 25;
   for (int y = 12; y <= height-12; y += passo) {
-	for (int x = 12; x <= width-12; x += passo) {
-  	int sorteio = int(random(30));
-  	char umChar = meuString.charAt(sorteio);
-  	if (umChar == 'A' || umChar == 'E' || umChar == 'I'
-                         || umChar == 'O' || umChar == 'U') {
-    	fill(255, 204, 0);
-  	} else {
-    	fill(255);
-  	}
-  	// Desenha a letra na tela
-  	text(umChar, x, y);
-	}
+    for (int x = 12; x <= width-12; x += passo) {
+      int sorteio = int(random(numLetras));
+      char umChar = meuString.charAt(sorteio);
+      if (umChar == 'A' || umChar == 'E' || umChar == 'I'
+        || umChar == 'O' || umChar == 'U') {
+        fill(255, 0, 255);
+      } else {
+        fill(0, 255, 0);
+      }
+      // Desenha a letra na tela
+      text(umChar, x, y);
+    }
   }
 }
 
+void mousePressed() {
+  loop();
+}
+
+void mouseReleased() {
+  noLoop();
+}
 ```
-
-
 
 ## Bibliografia
 

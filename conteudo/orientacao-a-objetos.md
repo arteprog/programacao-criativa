@@ -33,19 +33,19 @@ void setup() {
   bandeirinha(50, 50, 50);  // chama a função bandeirinha
 }
 void bandeirinha(float px, float py, float tamanho) {
-	// Desenha polígono em torno das coordenadas passadas, e tamanho
-	float metade = tamanho / 2;
-	pushMatrix();   // preservando o sistema de coordenadas anterior,
-	translate(px, py);  // translação do sistema de coordenadas
-	beginShape();  // inicia polígono
-	vertex(-metade, -metade);
-	vertex(-metade, metade);
-	vertex(0, 0);
-	vertex(metade, metade);
-	vertex(metade, -metade);
-	endShape(CLOSE);  // encerra polígono, fechando 	
-popMatrix();
-  }
+  // Desenha polígono em torno das coordenadas passadas, e tamanho
+  float metade = tamanho / 2;
+  pushMatrix();   // preservando o sistema de coordenadas anterior,
+  translate(px, py);  // translação do sistema de coordenadas
+  beginShape();  // inicia polígono
+    vertex(-metade, -metade);
+    vertex(-metade, metade);
+    vertex(0, 0);
+    vertex(metade, metade);
+    vertex(metade, -metade);
+  endShape(CLOSE);  // encerra polígono, fechando 	
+  popMatrix();
+}
 ```
 ## 1. Redesenhando formas e atualizando variáveis no laço principal
 
@@ -346,7 +346,7 @@ class Bandeirinha {
 
 ### Referências:
 
-VILLARES, Alexandre. B. A.; MOREIRA, Daniel. de C.; GOMES, Monica Rizzolli. **[Ensino de programação em um contexto de exploração gráfica com Processing modo Python.](https://villares.github.io/mestrado/VILLARES_MOREIRA_GOMES_GRAPHICA_2017) ** GRAPHICA 2017: XII International Conference on Graphics Engineering for Arts and Design. 2017.
+VILLARES, Alexandre. B. A.; MOREIRA, Daniel. de C.; GOMES, Monica Rizzolli. [**Ensino de programação em um contexto de exploração gráfica com Processing modo Python.**](https://villares.github.io/mestrado/VILLARES_MOREIRA_GOMES_GRAPHICA_2017) GRAPHICA 2017: XII International Conference on Graphics Engineering for Arts and Design. 2017.
 
 [Objects tutorial](https://processing.org/tutorials/objects/) by Daniel Shiffman @ Processing.org
 

@@ -1,7 +1,8 @@
 #  Orientação a objetos com bandeirinhas
 
-
 Bandeirinhas são um tema recorrente da cultura visual brasileira, visível não só nas Festas Juninas como explorado largamente por artistas visuais como Alfredo Volpi: "Da série das fachadas surgem as bandeirinhas de festa junina, que, mais que um motivo popular, se tornam elementos compositivos autônomos"[1]. Foram escolhidas para gerar reconhecimento e interesse visual nas imagens e animações produzidas.
+
+<img src="../assets/imagens/volpi.png" align="left" alt="Volpi"> 
 
 [1] [BANDEIRINHAS].In: ENCICLOPÉDIA Itaú Cultural de Arte e Cultura Brasileiras. São Paulo: Itaú Cultural, 2017. Disponível em: <http://enciclopedia.itaucultural.org.br/obra1797/bandeirinhas>.
 Acesso em: 22 de Jun. 2017. Verbete da Enciclopédia. ISBN: 978-85-7979-060-7

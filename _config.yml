@@ -1,4 +1,4 @@
-title: ”<strong>arteprog</strong> arte e programação”
+title: <strong>arteprog</strong> arte e programação
 
 site_name: arteprog
 
@@ -15,7 +15,7 @@ author: arteprog
 # author_email: 
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
-url: http://arteprog.space
+url: http://arteprog.space/
 
 # logo: /assets/logo.png
 

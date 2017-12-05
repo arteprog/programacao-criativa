@@ -44,7 +44,7 @@ O curso introdutório Programação Criativa, visa promover a familiarização d
 17. [Pixel arte](/conteudo/pixel-arte.md)
 18. [Pixels e imagens](/conteudo/pixels-e-imagens.md)
 19. [Exportação de imagens e PDFs]
-20. [Orientaço a objetos](https://github.com/arteprog/programacao-criativa/blob/master/conteudo/orientacao-a-objetos.md)
+20. [Orientação a objetos](https://github.com/arteprog/programacao-criativa/blob/master/conteudo/orientacao-a-objetos.md)
 
 ---
 Texto e imagens / *text and images*:  [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); Código / *code*: [GNU GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) exceto onde explicitamente indicado por questões de compatibilidade. [DETALHES](/LICENSE.md)

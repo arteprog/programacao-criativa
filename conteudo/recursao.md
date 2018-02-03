@@ -31,14 +31,23 @@ void desenharRetangulo(int x, int y, int tam, int level) {
 ![2](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/recursao/recursao2003.jpg?raw=true)
 
 ![3](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/recursao/recursao2005.jpg?raw=true)
+
+Comente a linha:
+
 //desenhaCirculo(x, y - d/2, d/2);
 
 ![4](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/recursao/recursao2038.jpg?raw=true)
+
+Comente as linhas:
+
 //desenhaCirculo(x, y + d/2, d/2);
 
 //desenhaCirculo(x, y - d/2, d/2);
 
 ![5](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/recursao/recursao2049.jpg?raw=true)
+
+Comente as linhas:
+
 //desenhaCirculo(x + d/2, y, d/2);
 
 //desenhaCirculo(x, y + d/2, d/2);

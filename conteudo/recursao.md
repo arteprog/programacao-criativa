@@ -25,3 +25,26 @@ void desenharRetangulo(int x, int y, int tam, int level) {
   }
 }
 ```
+
+### Exemplo 02
+
+```pde
+void setup() {
+  size (701, 701);
+}
+
+void draw() {
+  desenhaCirculo(width/2, height/2, 300);
+}
+
+void desenhaCirculo(float x, float y, float d) {
+  ellipse(x, y, d, d);
+  if (d > 2) {
+    desenhaCirculo(x - d/2, y, d/2);
+    desenhaCirculo(x + d/2, y, d/2);
+    desenhaCirculo(x, y + d/2, d/2);
+    desenhaCirculo(x, y - d/2, d/2);
+  }
+}
+```
+

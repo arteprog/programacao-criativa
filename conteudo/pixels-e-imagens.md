@@ -130,7 +130,7 @@ void draw() {
 }
 ```
 
-![](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/pixel02.png?raw=true)
+![](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/pixe02.png?raw=true)
 
 ## Filtros de imagem
 

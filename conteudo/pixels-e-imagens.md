@@ -95,6 +95,39 @@ void keyPressed() {
 }
 ```
 
+```pde
+PImage img;
+PImage imgTemp;
+
+void setup() {
+  size(800, 400);
+  img = loadImage("monica.jpg");
+  imgTemp = img.get();
+}
+
+void draw() {
+  scale(2);
+  image(img,0,0);
+  image(imgTemp, img.width, 0);
+  for (int i = 0; i <imgTemp.pixels.length; i++) {
+    float record = -1; 
+    int selectedPixel = i; 
+    for (int j = i; j < imgTemp.pixels.length; j++) {
+      color pix   = imgTemp.pixels[j]; 
+      float b = hue(pix); 
+      if (b > record) {
+        selectedPixel = j; 
+        record = b;
+      }
+    }
+    color cor = imgTemp.pixels[i];
+    imgTemp.pixels[i] = imgTemp.pixels[selectedPixel];
+    imgTemp.pixels[selectedPixel] = cor;
+  }
+  imgTemp.updatePixels();
+}
+```
+
 ## Filtros de imagem
 
 Processing oferece uma série de filtros prontos que podem ser aplicados em qualquer imagem. O comando filtro() aplica um filtro em uma imagem usando a sintaxe `filter(MODE);` ou `filter(MODE, level);`

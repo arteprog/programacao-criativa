@@ -30,21 +30,32 @@ Use `get()` para os pixels visveis na tela ou o método `.get()` para os pixels 
 PImage img;  // Declarando uma variável do tipo PImage
 
 void setup() {
-  size(640, 360);
+  size(400, 400);
   noStroke();
-  img = loadImage("moonwalk.jpg");   // carregando uma imagem da pasta /data/
+  rectMode(CENTER);
+  img = loadImage("ale.jpg");   // carregando uma imagem da pasta /data/
 }
 
 void draw() {
-  if (keyPressed){
-    image(img, 0, 0);  // desenha a imagem (PImage, x, y, [largura, altura]*)  *opcionais 
-  }
+
+  image(img, 0, 0);  // desenha a imagem (PImage, x, y, [largura, altura]*)  *opcionais 
   color cor = img.get(mouseX, mouseY); // pega a cor do pixel na posição x, y
+  float R = red(img.get(mouseX, mouseY)); // pega a quantidade de vermelho do pixel na posição x, y
+  float G = green(img.get(mouseX, mouseY)); // pega a quantidade de verde do pixel na posição x, y
+  float B = blue(img.get(mouseX, mouseY)); // pega a quantidade de azul do pixel na posição x, y
   fill(cor);                          // pede o preenchimento!
-  ellipse(mouseX, mouseY, 100, 100); // desenha um círculo
+  ellipse(mouseX, mouseY, 60, 60); // desenha um círculo
+  fill(255, 0, 0); // vermelho
+  rect(mouseX, mouseY + 60, R, 20); 
+  fill(0, 255, 0); // verde
+  rect(mouseX, mouseY + 80, G, 20);
+  fill(0, 0, 255); // azul
+  rect(mouseX, mouseY + 100, B, 20);
 }
 
 ```
+
+![](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/get008.jpg?raw=true) ![]https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/get017.jpg?raw=true)
 
 ### Manipulando individualmente os pixels de uma imagem 
 

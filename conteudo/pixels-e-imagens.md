@@ -95,6 +95,8 @@ void keyPressed() {
 }
 ```
 
+![](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/pixel01.png?raw=true)
+
 ```pde
 PImage img;
 PImage imgTemp;
@@ -127,6 +129,8 @@ void draw() {
   imgTemp.updatePixels();
 }
 ```
+
+![](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/pixel02.png?raw=true)
 
 ## Filtros de imagem
 

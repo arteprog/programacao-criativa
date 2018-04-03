@@ -43,7 +43,7 @@ O curso introdutório Programação Criativa, visa promover a familiarização d
 16. [Tabelas](/conteudo/tabelas.md)
 17. [Pixel arte](/conteudo/pixel-arte.md)
 18. [Pixels e imagens](/conteudo/pixels-e-imagens.md)
-19. [Glitch art](programacao-criativa/conteudo/glitch.md)
+19. [Glitch art](/conteudo/glitch.md)
 20. [Exportação de imagens e PDFs]
 21. [Orientação a objetos](https://github.com/arteprog/programacao-criativa/blob/master/conteudo/orientacao-a-objetos.md)
 

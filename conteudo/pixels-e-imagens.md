@@ -55,8 +55,7 @@ void draw() {
 
 ```
 
-![](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/get008.jpg?raw=true) 
-![]https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/get017.jpg?raw=true)
+![](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/get008.jpg?raw=true) ![](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/get017.jpg?raw=true)
 
 ### Manipulando individualmente os pixels de uma imagem 
 

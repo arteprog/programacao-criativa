@@ -3,7 +3,7 @@
 ## Bounce
 
 ```pde
-int raio = 50; // tamanho da altura/largura da ellipse
+int raio = 50; // tamanho do raio da ellipse
 float pX, pY; //posição inicial X e Y;   
 
 float vX = random(-4, 4);  // Velocidade X inicial

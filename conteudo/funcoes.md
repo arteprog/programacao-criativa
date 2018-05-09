@@ -9,7 +9,7 @@ tipo nome_da_função(tipo parâmetro, tipo outro_parâmetro) {
 
 ### Sintaxe do uso/invocação da função
 ```java
-nome_da_função(valor_passado, outro_valor_passado);
+nome_da_função(valor_parâmetro, valor_outro_parâmetro);
 // esta função precisa de dois parâmetros
 ```
 

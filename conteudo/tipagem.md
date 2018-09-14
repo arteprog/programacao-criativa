@@ -56,4 +56,4 @@ color corSorteada(int alpha) {
 | `String`  | cadeia de caracteres, `“texto”` (note as aspas duplas)
 | `PImage` | imagens raster/bitmap
 | `PShape` | formas vetorais, como as descritas num SVG
-| `PVector` | vetor, comunmente usado para descreve posição, velocidade ou aceleração em 2 ou 3 dimensões 
+| `PVector` | vetor, usado geralmente para descrever posição, velocidade ou aceleração (em 2 ou 3 dimensões)

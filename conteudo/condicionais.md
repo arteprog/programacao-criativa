@@ -8,7 +8,7 @@ opcionalmente defino que, senão (`else`), quando a condição "chovendo" é fal
 
 ## Sintaxe if/else e if
 
-![condicional](/assets/imagens/condicional-com-else.jpg)
+![condicional](../assets/imagens/condicional-com-else.jpg)
 
 ``` java
 if (chovendo) {        // a condição "chovendo" é avaliada como true (verdadeiro) ou false (falso)
@@ -18,7 +18,7 @@ if (chovendo) {        // a condição "chovendo" é avaliada como true (verdade
 }                      // termina o bloco do “senão”, continua o passeio.
 ```
 
-![condicional](/assets/imagens/condicional-sem-else.jpg)
+![condicional](../assets/imagens/condicional-sem-else.jpg)
 
 ``` java
 if (chovendo) {        // a condição "chovendo" é avaliada como true (verdadeiro) ou false (falso)
@@ -28,7 +28,7 @@ if (chovendo) {        // a condição "chovendo" é avaliada como true (verdade
 
 ## Exemplos
 
-![exemplo1](/assets/imagens/condicional1.png)
+![exemplo1](../assets/imagens/condicional1.png)
 
 ``` pde
 void setup(){

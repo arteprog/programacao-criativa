@@ -8,7 +8,7 @@ opcionalmente defino que, senão (`else`), quando a condição "chovendo" é fal
 
 ## Sintaxe if/else e if
 
-![condicional](/programacao-criativa/assets/imagens/condicional-com-else.jpg)
+![condicional](https://arteprog.space/programacao-criativa/assets/imagens/condicional-com-else.jpg)
 
 ``` python
 if chovendo:        # a condição "chovendo" é avaliada como true (verdadeiro) ou false (falso)
@@ -18,7 +18,7 @@ if chovendo:        # a condição "chovendo" é avaliada como true (verdadeiro)
                       # termina o bloco do “senão”, continua o passeio.
 ```
 
-![condicional](/programacao-criativa/assets/imagens/condicional-sem-else.jpg)
+![condicionalhttps://arteprog.space/programacao-criativa/assets/imagens/condicional-sem-else.jpg)
 
 ``` python
 if chovendo:        # a condição "chovendo" é avaliada como true (verdadeiro) ou false (falso)
@@ -28,7 +28,7 @@ if chovendo:        # a condição "chovendo" é avaliada como true (verdadeiro)
 
 ## Exemplos
 
-![exemplo1](/programacao-criativa/assets/imagens/condicional1.png)
+![exemplo1](https://arteprog.space//programacao-criativa/assets/imagens/condicional1.png)
 
 ``` python
 def setup():

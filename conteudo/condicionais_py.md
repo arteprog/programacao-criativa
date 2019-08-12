@@ -46,7 +46,7 @@ def draw():
         ellipse(mouseX, mouseY, 10, 10) # Então desenha um círculo na posição do mouse
                                         # termina o bloco (repare que não faz nada se o mouse estiver solto)
 
-    if keyPressed and key == 'a':    # Se uma tecla foi precionada E (&&) a tecla foi o caractere 'a'
+    if keyPressed and key == 'a':    # Se uma tecla foi precionada E a tecla foi o caractere 'a'
         background(200)              # Apague a tela com um fundo cinza (só executa sob as condições acima)
   
 

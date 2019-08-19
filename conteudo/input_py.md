@@ -8,15 +8,15 @@ As variáveis de sistema como `mouseX`, `mouseY`, `keyPressed`e `mousePressed` c
 
 | tipo | nome | descrição | 
 | --- | --- | --- |
-| int | mouseButton         |    variável de sistema que indica qual botão do mouse foi clicado `LEFT`, `RIGHT` ou `CENTER`
-| boolean | mousePressed        |    variável de sistema que indica o estado do mouse (`True` indica pressionado)
-| int | mouseX                    |    variável de sistema que contém a posição X do mouse na tela 
-| int | mouseY                    |    variável de sistema que contém a posição Y do mouse na tela
-| int | pmouseX                 |    variável de sistema que contém a posição X anterior do mouse na tela
-| int | pmouseY                 |    variável de sistema que contém a posição Y anterior do mouse na tela
+| int | mouseButton         |    indica qual botão do mouse foi clicado `LEFT`, `RIGHT` ou `CENTER`
+| boolean | mousePressed        |    estado do mouse (`True` indica pressionado)
+| int | mouseX                    |    informa a posição X do mouse na tela 
+| int | mouseY                    |    informa a posição Y do mouse na tela
+| int | pmouseX                 |    informa a posição X anterior do mouse na tela
+| int | pmouseY                 |    informa a posição Y anterior do mouse na tela
 | char | key                     |    caractere da última tecla alfa-numérica pressionada, ou a constante `CODED`
 | int | keyCode             |    código da última tecla não alfa-numérica, como `SHIFT`, `UP` e etc.
-| boolean | keyPressed        |    variável de sistema que indica se alguma tecla está pressionada
+| boolean | keyPressed        |    indica se alguma tecla está pressionada com (`True`) 
 
 ### Exemplo
 

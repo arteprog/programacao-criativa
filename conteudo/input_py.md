@@ -79,7 +79,7 @@ def keyPressed():          # Esta função executa uma vez quando uma tecla é p
     
     if keyCode == DOWN:                         # Se a seta para baixo foi precionada
         saveFrame("imagem-####.png")            # salve a imagem da tela de pintura em um arquivo PNG 
-        println("salvo o frame {}.".format(frameCount)  # mostre no console o número do frame
+        println("salvo o frame {}.".format(frameCount))  # mostre no console o número do frame
         
 
 ```

@@ -1,6 +1,6 @@
 # Input - entradas de dados
 
-No Processing, o teclado e o mouse são as principais formas de entrada de dados. Posteriormente trataresmos da leitura de arquivos e outras fontes de dados. Há duas maneiras de se obter informações sobre o movimento e cliques do mouse, assim como saber sobre as teclas sendo pressionadas no teclado. 
+No Processing, o teclado e o mouse são duas as principais formas de entrada de dados. Em outra ocasião trataremos da leitura de arquivos e outras fontes de dados. Veh=jamos aqui as maneiras de se obter informações sobre o movimento e cliques do mouse, assim como saber sobre as teclas sendo pressionadas no teclado. 
 
 1. Variáveis de sistema 
 
@@ -8,15 +8,15 @@ As variáveis de sistema como `mouseX`, `mouseY`, `keyPressed`e `mousePressed` c
 
 | tipo | nome | descrição | 
 | --- | --- | --- |
-| int | mouseButton         |    indica qual botão do mouse foi clicado `LEFT`, `RIGHT` ou `CENTER`
-| boolean | mousePressed        |    estado do mouse (`True` indica pressionado)
-| int | mouseX                    |    informa a posição X do mouse na tela 
-| int | mouseY                    |    informa a posição Y do mouse na tela
-| int | pmouseX                 |    informa a posição X anterior do mouse na tela
-| int | pmouseY                 |    informa a posição Y anterior do mouse na tela
-| char | key                     |    caractere da última tecla alfa-numérica pressionada, ou a constante `CODED`
-| int | keyCode             |    código da última tecla não alfa-numérica, como `SHIFT`, `UP` e etc.
-| boolean | keyPressed        |    indica se alguma tecla está pressionada com (`True`) 
+| int | mouseButton       |    indica qual botão do mouse foi clicado `LEFT`, `RIGHT` ou `CENTER`
+| boolean | mousePressed  |    estado do mouse (`True` indica pressionado)
+| int | mouseX            |    informa a posição X do mouse na tela 
+| int | mouseY            |    informa a posição Y do mouse na tela
+| int | pmouseX           |    informa a posição X anterior do mouse na tela
+| int | pmouseY           |    informa a posição Y anterior do mouse na tela
+| string | key              |    caractere da última tecla alfa-numérica pressionada, ou a constante `CODED`
+| int | keyCode           |    código da última tecla não alfa-numérica, como `SHIFT`, `UP` e etc.
+| boolean | keyPressed    |    indica se alguma tecla está pressionada com (`True`) 
 
 ### Exemplo
 
@@ -66,9 +66,9 @@ def setup():
     size(200, 200)
 
 
-def draw():
-
-
+def draw(): # é necessário um draw(), mesmo que vazio para que exista um laço principal e funcionem os eventos
+    pass
+    
 def mouseDragged():
     line(pmouseX, pmouseY, mouseX, mouseY) # Desenha uma linha da posição anterior do mouse até a atual
 

@@ -66,7 +66,7 @@ def setup():
     size(200, 200)
 
 
-def draw(): # é necessário um draw(), mesmo que vazio para que exista um laço principal e funcionem os eventos
+def draw(): # é necessário um draw(), mesmo que vazio, para que exista um laço principal e funcionem os eventos
     pass
     
 def mouseDragged():

@@ -66,7 +66,7 @@ void setup(){
   size(200, 200);
 }
 
-void draw(){
+void draw(){ // é necessário um draw(), mesmo que vazio, para que exista um laço principal e funcionem os eventos
 }
 
 void mouseDragged() {

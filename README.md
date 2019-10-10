@@ -48,5 +48,15 @@ O curso introdutório Programação Criativa, visa promover a familiarização d
 21. [Movimento](/conteudo/movimento.md)
 22. [Orientação a objetos](https://github.com/arteprog/programacao-criativa/blob/master/conteudo/orientacao-a-objetos.md)
 
+## Outros recursos
+
+### Materiais abertos em português
+
+- Tradução da referência da linguagem versão 1.0 http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html
+- Guia do Prof. Ranoya (UFPE) https://www.ranoya.com/aulas/designgenerativo/playgroundDocs/introProcessing.php?theme=dgen&elementos=processing
+- AMADO, Pedro, Introdução à programação gráfica (usando Processing), 2007 https://repositorio-aberto.up.pt/handle/10216/1848
+- Projeto [Processando-Processing](https://github.com/arteprog/Processando-Processing)
+
+
 ---
 Texto e imagens / *text and images*:  [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); Código / *code*: [GNU GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) exceto onde explicitamente indicado por questões de compatibilidade. [DETALHES](/LICENSE.md)

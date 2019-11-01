@@ -1,4 +1,9 @@
-Versão do código da casa que soma a posição nas coordenadas dos objetos.
+# Transformando o sistema de coordenandas
+
+
+### Primeiro exemplo
+
+Veja esta versão do código que desenha uma casa somando a posição `x, y` nas coordenadas dos objetos.
 
 ```pde
 void house(int x, int y)
@@ -9,7 +14,7 @@ void house(int x, int y)
 }
 ```
 
-Compare com esta versão que usa o translate(). Neste caso o código desenha a casa sempre no mesmo lugar, no ponto (0, 0), e deixa a translação fazer o trabalho! */
+Compare agora com esta versão que usa o `translate()`. Neste caso o código desenha a casa sempre no mesmo lugar, no ponto (0, 0), e deixa a translação fazer o trabalho!
 
 ```pde
 void house(int x, int y) 
@@ -22,3 +27,5 @@ void house(int x, int y)
   popMatrix();
 }
 ```
+
+Para que isto funcione corretamente, é preciso usar `pushMatrix()` que "salva" o estado atual do sistema de coordenadas, e no final do desenho `popMatrix()`, que retoma o estado anterior.

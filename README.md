@@ -33,20 +33,21 @@ O curso introdutório Programação Criativa, visa promover a familiarização d
 6. [Arte Gerativa](/conteudo/arte-gerativa.md) 
 7. [Funções](/conteudo/funcoes.md)
 8. [Variáveis, parâmetros e tipos](/conteudo/tipagem.md)
-9. [Aleatoriedade](/conteudo/numeros-aleatorios.md)
-10. [Laços de repetição](/conteudo/lacos.md)
-11. [Translação e rotação](/conteudo/translacao-rotacao.md)
-12. [Data arte](/conteudo/data-arte.md)
-13. [Tipagem](/conteudo/tipagem.md)
-14. [Escopo](/conteudo/escopo.md)
-15. [Arrays](/conteudo/arrays.md)
-16. [Tabelas](/conteudo/tabelas.md)
-17. [Pixel arte](/conteudo/pixel-arte.md)
-18. [Pixels e imagens](/conteudo/pixels-e-imagens.md)
-19. [Glitch art](/conteudo/glitch.md)
-20. [Exportação de imagens e PDFs]
+9. [Escopo](/conteudo/escopo.md)
+10. [Aleatoriedade](/conteudo/numeros-aleatorios.md)
+11. [Laços de repetição](/conteudo/lacos.md)
+12. [Translação e rotação](/conteudo/translacao-rotacao.md)
+13. [Arrays](/conteudo/arrays.md)
+14. [Tabelas](/conteudo/tabelas.md)
+15. [Data arte](/conteudo/data-arte.md)
+16. [Pixel arte](/conteudo/pixel-arte.md)
+17. [Pixels e imagens](/conteudo/pixels-e-imagens.md)
+18. [Glitch art](/conteudo/glitch.md)
+19. [Recursão](/conteudo/recursao.md)
+20. [Exportação de imagens e PDFs](/conteudo/export.md)
 21. [Movimento](/conteudo/movimento.md)
 22. [Orientação a objetos](https://github.com/arteprog/programacao-criativa/blob/master/conteudo/orientacao-a-objetos.md)
+23. [Texto](/conteudo/texto.md)
 
 ## Outros recursos
 
@@ -56,7 +57,6 @@ O curso introdutório Programação Criativa, visa promover a familiarização d
 - Guia do Prof. Ranoya (UFPE) https://www.ranoya.com/aulas/designgenerativo/playgroundDocs/introProcessing.php?theme=dgen&elementos=processing
 - AMADO, Pedro, Introdução à programação gráfica (usando Processing), 2007 https://repositorio-aberto.up.pt/handle/10216/1848
 - Projeto [Processando-Processing](https://github.com/arteprog/Processando-Processing)
-
 
 ---
 Texto e imagens / *text and images*:  [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); Código / *code*: [GNU GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) exceto onde explicitamente indicado por questões de compatibilidade. [DETALHES](/LICENSE.md)

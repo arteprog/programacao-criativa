@@ -1,10 +1,10 @@
 # Recursão
 
-Allen Downey definie *recursão* como o processo de chamar uma função que está sendo atualmente executada.
+[Allen Downey](https://books.trinket.io/thinkjava2/chapter8.html) define *recursividade* como o processo de chamar uma função que está sendo atualmente executada.
 
 A ideia central é de que uma função pode chamar outras funções, e no caso de uma função recursiva, uma função pode também chamar ela mesma!
 
-Para que isso funcione (e não caia em uma cilada conhecida como "recursão infinita") é preciso que a função em certas condições chegue em uma opção de execução que não requer chamar ela mesma.
+Para que isso funcione (e não caia em uma cilada conhecida como "recursão infinita") é preciso que a função em certas condições chegue em uma opção de execução que não requer chamar ela mesma, é o chamado "caso base".
 
 ### Exemplo 01
 

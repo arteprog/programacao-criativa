@@ -27,17 +27,18 @@ void setup() {
   size(100, 100);  // área de desenho
   x = width / 2;
   y = height / 2;   // coordenadas do meio da área de desenho
+  background(0); // fundo preto
 }
 void draw() {
   /* Laço principal de repetição do Processing */
-  // background(0); // limpa o fundo
+  // background(0); // limpa a tela com a cor indicada
   circle(x, y, 5);  // desenha um círculo
   x = x + random(-5, 5);  // modifica o x
   y = y + random(-5, 5);  // modifica o y
-  if (x > width + 25) x = -25;
-  if (y > height + 25) y = -25;
-  if (x < -25) x = width + 25;
-  if (y < -25) y = height + 25;  
+  if (x > width + 5) x = -5;
+  if (y > height + 5) y = -5;
+  if (x < -5) x = width + 5;
+  if (y < -5) y = height + 5;
 }
 ```
 

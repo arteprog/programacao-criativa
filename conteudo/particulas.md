@@ -26,7 +26,7 @@ void setup() {
   /* Código de configuração, executado no início pelo Processing */
   size(100, 100);  // área de desenho
   x = width / 2;
-  y = height / 2;	// coordenadas do meio da área de desenho
+  y = height / 2;   // coordenadas do meio da área de desenho
 }
 void draw() {
   /* Laço principal de repetição do Processing */
@@ -34,6 +34,11 @@ void draw() {
   circle(x, y, 50);  // desenha um círculo
   x = x + random(-5, 5);  // modifica o x
   y = y + random(-5, 5);  // modifica o y
+  if (x > width + 25) x = -25;
+  if (y > height + 25) y = -25;
+  if (x < -25) x = width + 25;
+  if (y < -25) y = height + 25;
+  
 }
 ```
 
@@ -63,44 +68,33 @@ class particula {
   /* Classe particula */
   float x, y, tamanho;
   particula(float px, float py, float ptamanho) {
-	x = px;
-	y = py;
-	tamanho = ptamanho;
+    x = px;
+    y = py;
+    tamanho = ptamanho;
   }
 
   void desenha() {
-	/* Desenha polígono em torno das coordenadas do objeto */
-	float metade = tamanho / 2;
-	pushMatrix();   // preseservando o sistema de coordenadas anterior
-	translate(x, y);  // translada o sistema de coordenadas
-	beginShape();  // inicia polígono
-	vertex(-metade, -metade);
-	vertex(-metade, metade);
-	vertex(0, 0);
-	vertex(metade, metade);
-	vertex(metade, -metade);
-	endShape(CLOSE);  // encerra polígono, fechando no primeiro vértice
-	popMatrix();
+    circle(x, y, tamanho);  // desenha um círculo
   }
 
   void anda() {
-	/* atualiza a posição do objeto e devolve do lado oposto se sair */
-	x++;
-	y++;
-	if (x > width + 25)  x = -25;
-	if (y > height + 25)   y = -25;
+    /* atualiza a posição do objeto e devolve do lado oposto se sair */
+    x = x + random(-5, 5);  // modifica o x
+    y = y + random(-5, 5);  // modifica o y
+    if (x > width + 25) x = -25;
+    if (y > height + 25) y = -25;
+    if (x < -25) x = width + 25;
+   if (y < -25) y = height + 25;
   }
 }
 ```
 
 ## 3. Instanciando mais alguns objetos
 
-<img src="../assets/imagens/passo3.png" align="left" alt="output passo 3">
-
 A vantagem da estruturação e encapsulamento de termos um objeto Particula criado por uma classe particula pode começar a ser visto quando instanciamos mais de uma particula.
 
 ```pde
-particula particula_0, particula_1, particula_2; // lista de objetos
+Particula particula_0, particula_1, particula_2; // lista de objetos
 
 void setup() {
   /* define área de desenho e popula lista de particulas */
@@ -126,17 +120,14 @@ void draw() {
 
 ## 4. Ampliando a classe, mudando o comportamento e adicionando outras propriedades.
 
-<img src="../assets/imagens/passo4.png" align="left" alt="output passo 4">
-
 O passo seguinte é dado ampliando o código da classe particula.
 
-No método construtor particula():
+No método construtor Particula():
 1. Sorteio do tamanho, caso nenhum tenha sido passado 0 na expressão construtora;
 2. Sorteio da velocidade, decomposta nos componentes horizontal vx e vertical vy;
 3. Sorteio da cor, ligeiramente translúcida.
 
 No método desenha():
-1. Remoção do contorno com noStroke();
 2. Aplicação da cor de preenchimento com fill(cor).
 
 No método anda():
@@ -144,35 +135,35 @@ No método anda():
 2. Tratamento da saída do objeto da àrea de desenho por qualquer dos lados.
 
 ```pde
-class particula {
+class Particula {
   /* Classe particula, cor sorteada, tamanho sorteado */
   float x, y, vx, vy, tamanho;
   color cor;
-  particula(float px, float py, float ptamanho) {
-	x = px;
-	y = py;
-	if (ptamanho != 0) {
-  	tamanho = ptamanho;
-	} else {
-  	tamanho = random(50, 200);
-	}
-	vx = random(-1, 1);
-	vy = random(-1, 1);
-	cor  = color(random(255), // R
-  	            random(255), // G
-  	            random(255), // B
-  	            200);  // alpha
+  Particula(float px, float py, float ptamanho) {
+    x = px;
+    y = py;
+    if (ptamanho != 0) {
+    tamanho = ptamanho;
+    } else {
+    tamanho = random(50, 200);
+    }
+    vx = random(-1, 1);
+    vy = random(-1, 1);
+    cor  = color(random(255), // R
+                random(255), // G
+                random(255), // B
+                200);  // alpha
   }
 
   void desenha() {
-	// se o mouse estiver longe, normal, senão, branca
-	if (dist(mouseX, mouseY, x, y) > metade) {
-  	  fill(cor);
-	} else {
-  	  fill(255, 100);
+    // se o mouse estiver longe, normal, senão, branca
+    if (dist(mouseX, mouseY, x, y) > metade) {
+      fill(cor);
+    } else {
+      fill(255, 100);
 
   void anda() {
-	/* atualiza a posição do objeto e devolve do lado oposto se sair */
+    /* atualiza a posição do objeto e devolve do lado oposto se sair */
 
   }
 }
@@ -193,16 +184,16 @@ void setup() {
   float meia_altura = height / 2;
   particulas = new ArrayList<particula>();
   for (int i=0; i <50; i++) {
-	particulas.add(new Particula(meia_largura, meia_altura, 0));
+    particulas.add(new Particula(meia_largura, meia_altura, 0));
   }
 }
 
 void draw() {
   /* Limpa a tela, desenha e atualiza particulas */
   background(0);  // atualização do desenho, fundo preto
-  for (particula Particula : particulas) {
-	Particula.desenha();
-	Particula.anda();
+  for (Particula p : particulas) {
+    p.desenha();
+    p.anda();
   }
 }
 ```
@@ -212,15 +203,12 @@ void draw() {
 Como extra, acrescentamos exemplo dos métodos append() e remove() do ArrayList, chamados nos eventos de clique do mouse ou acionamento da barra de espaço no teclado, acrescentando ou removendo objetos respectivamente. O método de desenha() da particula agora sofre a influência da distância do mouse.
 
 
-<img src="../assets/imagens/s4.gif" align="left" alt="output passo 3">
-
-
 ```pde
 void mousePressed() {
   /* Acrescenta pequena particula branca */
-  particula nova_bandeirinha = new Particula(mouseX, mouseY, 25);
-  nova_bandeirinha.cor = color(255);  // forçando que seja branca!
-  particulas.add(nova_bandeirinha);
+  particula nova_particula = new Particula(mouseX, mouseY, 25);
+  nova_particula.cor = color(255);  // forçando que seja branca!
+  particulas.add(nova_particula);
 }
 
 void keyPressed() {  
@@ -231,11 +219,11 @@ void keyPressed() {
   }
 }
 
-class particula {
+class Particula {
   /* Classe particula, cor sorteada, tamanho sorteado caso tamanho = 0 */
   float x, y, vx, vy, tamanho;
   color cor;
-  particula(float px, float py, float ptamanho) {
+  Particula(float px, float py, float ptamanho) {
     x = px;
     y = py;
     if (ptamanho != 0) {
@@ -263,14 +251,7 @@ class particula {
     } else {
       fill(255, 100);
     }
-    beginShape();  // inicia polígono
-    vertex(-metade, -metade);
-    vertex(-metade, metade);
-    vertex(0, 0);
-    vertex(metade, metade);
-    vertex(metade, -metade);
-    endShape(CLOSE);  // encerra polígono, fechando no primeiro vértice
-    popMatrix();
+    circle(x, y, tamanho);
   }
   void anda() {
     /* atualiza a posição do objeto e devolve do lado oposto se sair */

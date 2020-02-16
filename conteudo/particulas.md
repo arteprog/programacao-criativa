@@ -186,14 +186,16 @@ class Particula {
 Neste passo criamos uma estrutura de dados, no caso uma lista dinâmica do tipo *ArrayList*, que pode conter referências para um número não previamente determinado de objetos. Vamos instanciar 50 particulas no `setup()` e , em seguida, no `draw()` iteramos por estas particulas contidas no ArrayList `particulas` com um tipo de laço conhecido como "for each" que tem a estrutura `for (Tipo objeto : lista_de_objetos){ }`. 
 
 ```pde
-ArrayList<particula> particulas; // lista de objetos
+ArrayList<Particula> particulas; // lista de objetos
 
 void setup() {
   /* define área de desenho e popula lista de particulas */
   size(400, 400);  // área de desenho
+  background(0);  // fundo preto
+
   float meia_largura = width / 2;
   float meia_altura = height / 2;
-  particulas = new ArrayList<particula>();
+  particulas = new ArrayList<Particula>();
   for (int i=0; i <50; i++) {
     particulas.add(new Particula(meia_largura, meia_altura, 0));
   }
@@ -201,7 +203,7 @@ void setup() {
 
 void draw() {
   /* Limpa a tela, desenha e atualiza particulas */
-  background(0);  // atualização do desenho, fundo preto
+  //background(0);  // limpa a tela, fundo preto
   for (Particula p : particulas) {
     p.desenha();
     p.anda();

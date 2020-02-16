@@ -158,7 +158,7 @@ class Particula {
     if (ptamanho != 0) {
       tamanho = ptamanho;
     } else {
-      tamanho = random(50, 200);
+      tamanho = random(50, 100);
     }
     cor  = color(random(255), // R
       random(255), // G
@@ -202,7 +202,7 @@ void setup() {
   float meia_altura = height / 2;
   particulas = new ArrayList<Particula>();
   for (int i=0; i <50; i++) {
-    particulas.add(new Particula(meia_largura, meia_altura, 0));
+    particulas.add(new Particula(random(width), random(height), 0));
   }
 }
 

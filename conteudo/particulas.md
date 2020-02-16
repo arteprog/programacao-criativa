@@ -128,17 +128,22 @@ void draw() {
 
 ## 4. Ampliando a classe, mudando o comportamento e adicionando outras propriedades.
 
-O passo seguinte é dado ampliando o código da classe particula.
+O passo seguinte é dado modificando o código da classe particula.
+
+Na definição da classe `Particula`:
+- É criado um atributo da classe para determinar ma velocidade de redução do tamanho (`velocidadeEncolhimento`);
+- É crirada uma variável para controlar o tamanho dos "passos aleatórios" (`maxRandom`);
 
 No método construtor `Particula()`:
-1. Sorteio do tamanho, caso tenha sido passado 0 na expressão construtora;
-3. Sorteio da cor.
+- Sorteio do tamanho, caso tenha sido passado 0 na expressão construtora;
+- Sorteio de uma cor.
 
 No método `desenha()`:
-2. Aplicação da cor de preenchimento com fill(cor).
+- Aplicação da cor de preenchimento com `fill(cor)`.
 
-No método `anda()`:
-1. Atualização do tamanho;
+No método `anda()`
+- Uso do `maxRandom` no sorteio do deslocamento;
+- Atualização do tamanho;
 
 ```pde
 class Particula {

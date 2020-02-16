@@ -105,11 +105,11 @@ Particula particula_0, particula_1, particula_2; // lista de objetos
 
 void setup() {
   /* define área de desenho e popula lista de particulas */
-  size(100, 100);  // área de desenho
+  size(500, 500);  // área de desenho
   float meia_largura = width / 2;
   float meia_altura = height / 2;
-  particula_0 = new Particula(meia_largura, meia_altura, 50);
-  particula_1 = new Particula(80, 10, 30);
+  particula_0 = new Particula(meia_largura, meia_altura, 5);
+  particula_1 = new Particula(80, 10, 10);
   particula_2 = new Particula(10, 40, 20);
 }
 

@@ -106,11 +106,12 @@ Particula particula_0, particula_1, particula_2; // lista de objetos
 void setup() {
   /* define área de desenho e popula lista de particulas */
   size(500, 500);  // área de desenho
+  background(0);
   float meia_largura = width / 2;
   float meia_altura = height / 2;
   particula_0 = new Particula(meia_largura, meia_altura, 5);
-  particula_1 = new Particula(80, 10, 10);
-  particula_2 = new Particula(10, 40, 20);
+  particula_1 = new Particula(280, 100, 10);
+  particula_2 = new Particula(200, 400, 20);
 }
 
 void draw() {
@@ -129,57 +130,60 @@ void draw() {
 
 O passo seguinte é dado ampliando o código da classe particula.
 
-No método construtor Particula():
-1. Sorteio do tamanho, caso nenhum tenha sido passado 0 na expressão construtora;
-2. Sorteio da velocidade, decomposta nos componentes horizontal vx e vertical vy;
-3. Sorteio da cor, ligeiramente translúcida.
+No método construtor `Particula()`:
+1. Sorteio do tamanho, caso tenha sido passado 0 na expressão construtora;
+3. Sorteio da cor.
 
-No método desenha():
+No método `desenha()`:
 2. Aplicação da cor de preenchimento com fill(cor).
 
-No método anda():
-1. Atualização da posição pela soma dos componentes de velocidade na posição;
-2. Tratamento da saída do objeto da àrea de desenho por qualquer dos lados.
+No método `anda()`:
+1. Atualização do tamanho;
 
 ```pde
 class Particula {
   /* Classe particula, cor sorteada, tamanho sorteado */
-  float x, y, vx, vy, tamanho;
+  float x, y, tamanho;
+  float maxRandom = 3;
+  float velocidadeEncolhimento = 0.1;
   color cor;
   Particula(float px, float py, float ptamanho) {
     x = px;
     y = py;
     if (ptamanho != 0) {
-    tamanho = ptamanho;
+      tamanho = ptamanho;
     } else {
-    tamanho = random(50, 200);
+      tamanho = random(50, 200);
     }
-    vx = random(-1, 1);
-    vy = random(-1, 1);
     cor  = color(random(255), // R
-                random(255), // G
-                random(255), // B
-                200);  // alpha
+      random(255), // G
+      random(255), // B
+      200);  // alpha
   }
 
   void desenha() {
-    // se o mouse estiver longe, normal, senão, branca
-    if (dist(mouseX, mouseY, x, y) > metade) {
-      fill(cor);
-    } else {
-      fill(255, 100);
-
+    fill(cor);
+    if (tamanho > 0) circle(x, y, tamanho);
+  }
   void anda() {
     /* atualiza a posição do objeto e devolve do lado oposto se sair */
-
+    x = x + random(-maxRandom, maxRandom);  // modifica o x
+    y = y + random(-maxRandom, maxRandom);  // modifica o y
+    if (x > width + 25) x = -25;
+    if (y > height + 25) y = -25;
+    if (x < -25) x = width + 25;
+    if (y < -25) y = height + 25;
+    // reduz o tamanho
+    if (tamanho > 0) {
+      tamanho = tamanho - velocidadeEncolhimento;
+    }
   }
 }
 ```
 
 ## 5. Uma lista de objetos
 
-Uma estrutura de dados, no caso uma lista do tipo ArrayList, pode de maneira muito simples conter referências para um grande número de objetos.
-Aqui chegamos rapidamente a um comportamento visualmente interessante instanciando 50 particulas no setup() e em seguida no draw() iteramos por estas particulas com um tipo de laço conhecido como "for each" com a estrutura for (Tipo objeto : lista_de_objetos){ }. 
+Neste passo criamos uma estrutura de dados, no caso uma lista dinâmica do tipo *ArrayList*, que pode conter referências para um número não previamente determinado de objetos. Vamos instanciar 50 particulas no `setup()` e , em seguida, no `draw()` iteramos por estas particulas contidas no ArrayList `particulas` com um tipo de laço conhecido como "for each" que tem a estrutura `for (Tipo objeto : lista_de_objetos){ }`. 
 
 ```pde
 ArrayList<particula> particulas; // lista de objetos
@@ -205,10 +209,9 @@ void draw() {
 }
 ```
 
-## 6. Acrescentando e removendo objetos; Mudança da cor com o mouse próximo.
+## 6. Acrescentando e removendo objetos
 
-Como extra, acrescentamos exemplo dos métodos append() e remove() do ArrayList, chamados nos eventos de clique do mouse ou acionamento da barra de espaço no teclado, acrescentando ou removendo objetos respectivamente. O método de desenha() da particula agora sofre a influência da distância do mouse.
-
+Como extra, acrescentamos exemplo dos métodos append() e remove() do ArrayList, chamados nos eventos de clique do mouse ou acionamento da barra de espaço no teclado, acrescentando ou removendo objetos respectivamente. 
 
 ```pde
 void mousePressed() {
@@ -223,52 +226,6 @@ void keyPressed() {
   int num_particulas =  particulas.size();
   if (key == ' ' && num_particulas > 1) {
      particulas.remove(num_particulas - 1);
-  }
-}
-
-class Particula {
-  /* Classe particula, cor sorteada, tamanho sorteado caso tamanho = 0 */
-  float x, y, vx, vy, tamanho;
-  color cor;
-  Particula(float px, float py, float ptamanho) {
-    x = px;
-    y = py;
-    if (ptamanho != 0) {
-      tamanho = ptamanho;
-    } else {
-      tamanho = random(50, 200);
-    }
-    vx = random(-1, 1);
-    vy = random(-1, 1);
-    cor = color(random(255), // R
-      random(255), // G
-      random(255), // B
-      200);  // alpha
-  }
-
-  void desenha() {
-    /* Desenha polígono em torno das coordenadas do objeto */
-    float metade = tamanho / 2;
-    pushMatrix();   // preseservando o sistema de coordenadas anterior
-    translate(x, y);  // translada o sistema de coordenadas
-    noStroke() ; // sem contorno
-    // se o mouse estiver longe, normal, senão, branca
-    if (dist(mouseX, mouseY, x, y) > metade) {
-      fill(cor);
-    } else {
-      fill(255, 100);
-    }
-    circle(x, y, tamanho);
-  }
-  void anda() {
-    /* atualiza a posição do objeto e devolve do lado oposto se sair */
-    x += vx;
-    y += vy;
-    float metade = tamanho / 2;
-    if (x > width + metade) x = -metade;
-    if (y > height + metade) y = -metade;
-    if (x < -metade) x = width + metade;
-    if (y < -metade) y = height + metade;
   }
 }
 ```

@@ -3,7 +3,7 @@
 Inspirado na introdução à simulações físicas apresentada por Daniel Shiffman em *Nature of Code*, 
 este tutorial que se desenvolve  em etapas  serão introduz alguns conceitos de orientação a objetos: Classe, atributos de dados e métodos, instâncias e encapsulamento.
 
-Não são abordadas as questões de herança e composição. Para poder aproveitar o exemplo sugerimos que você revise antes o seguinte vocabulário e algumas ideias de programação:
+Não serão abordadas as questões de herança e composição. Para poder aproveitar o exemplo sugerimos que você revise antes o seguinte vocabulário e algumas ideias de programação:
 
 * Métodos de desenho `rect`, `line`, `ellipse`, `beginShape`, `vertex` e `endShape`;
 * Controle de atributos gráficos `fill`, `stroke`, `noStroke`, `noFill`, `background`;
@@ -13,11 +13,11 @@ Não são abordadas as questões de herança e composição. Para poder aproveit
 
 ## 1. Redesenhando formas e atualizando variáveis no laço principal
 
-<img src="../assets/imagens/passo1.png" align="left" alt="output passo 1">
-
 Para se obter o efeito de movimento (animação da particula) criamos um par de variáveis globais x e y, inicializadas no setup() com as coordenadas do meio da àrea de desenho. Note que o escopo global dessas variáveis precisa ser indicado com a palavra chave global quando pretendemos alterá-las.
 
-O novo draw() cujo nome faz parte da infraestrutura do Processing para permitir animações, terá automaticamente a execução repetida continuamente, é o "laço principal" do sketch. Neste bloco vamos inicialmente limpar a tela com background() invocar a função de desenho particula() na posição indicada pelas variáveis x e y, incrementar as variáveis de posição e por fim checar se estas estão além de um certo limite e precisam ser alteradas (redefinindo a posição para um novo ciclo de incrementos).
+O `draw()` que faz parte da infraestrutura do Processing para permitir animações, é executado repetidas vezes, continuamente, é conhecido às vezes como o "laço principal" do sketch.
+
+Neste bloco podemos ou não limpar a tela com `background()` e invocar a função de desenho `circle()` com a posição indicada pelas variáveis x e y, atualizar as variáveis de posição e por fim checar se estas estão além de um certo limite e precisam ser alteradas (redefinindo a posição para um novo ciclo de alterações).
 
 ```pde
 float x, y;
@@ -31,14 +31,13 @@ void setup() {
 void draw() {
   /* Laço principal de repetição do Processing */
   // background(0); // limpa o fundo
-  circle(x, y, 50);  // desenha um círculo
+  circle(x, y, 5);  // desenha um círculo
   x = x + random(-5, 5);  // modifica o x
   y = y + random(-5, 5);  // modifica o y
   if (x > width + 25) x = -25;
   if (y > height + 25) y = -25;
   if (x < -25) x = width + 25;
-  if (y < -25) y = height + 25;
-  
+  if (y < -25) y = height + 25;  
 }
 ```
 

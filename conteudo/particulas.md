@@ -22,16 +22,15 @@ Neste bloco podemos ou não limpar a tela com `background()` e invocar a funçã
 ```pde
 float x, y;
 
-void setup() {
-  /* Código de configuração, executado no início pelo Processing */
+void setup() { // Código de configuração, executado no início
   size(100, 100);  // área de desenho
+  // coordenadas do meio da área de desenho
   x = width / 2;
-  y = height / 2;   // coordenadas do meio da área de desenho
+  y = height / 2;  
   background(0); // fundo preto
 }
-void draw() {
-  /* Laço principal de repetição do Processing */
-  // background(0); // limpa a tela com a cor indicada
+void draw() { // Laço principal de repetição
+  // background(0); // Opcional, limpa a tela com a cor indicada
   circle(x, y, 5);  // desenha um círculo
   x = x + random(-5, 5);  // modifica o x
   y = y + random(-5, 5);  // modifica o y
@@ -44,30 +43,38 @@ void draw() {
 
 ## 2. Primeira aproximação da classe Particula
 
-Vamos agora obter o mesmo comportamento usando um objeto da classe particula. A classe é definida pelo bloco class Particula{} que começa com o método Particula(), construtor de um novo objeto da classe e que inicializa os atributos de dados (campos) de posição e tamanho. O método desenha() é praticamente a função que escrevemos no passo inicial, não requer mais os parâmetros de posição e tamanho, uma vez que usa os atributos de posição e tamanho do próprio objeto (instância) quando executado. O método anda() contém o código anteriormente usado para atualizar a posição nas variáveis globais, agora atualiza os atributos de dados (campos ou variáveis de instância) de posição do objeto. No bloco setup() criamos uma instância de particula no meio da área de desenho com a linha Particula = new Particula(width / 2, height / 2, 50) e o bloco draw() vai repetidamente limpar a tela e chamar os métodos de desenho e atualização, Particula.desenha() e Particula.anda() respectivamente.
+Vamos agora obter o mesmo comportamento usando um objeto da classe particula.
+A classe é definida pelo bloco `class Particula{ ... }` que contém logo no começo a definição do método `Particula()`, conhecido como construtor, e que produz um objeto da classe e inicializa os atributos de dados (campos) de posição e tamanho.
+
+Em seguida, o método `desenha()` é praticamente o desenho do círculo que escrevemos no passo inicial, usando os atributos de posição e tamanho do próprio objeto (instância) quando executado.
+
+O método `anda()` contém o código anteriormente usado para atualizar a posição nas variáveis globais, agora atualiza os atributos de dados (campos ou variáveis de instância) de posição do objeto. 
+
+No bloco `setup()` criamos uma instância de particula no meio da área de desenho com a linha `Particula = new Particula(width / 2, height / 2, 50)` e o `draw()` vai repetidamente limpar a tela (opcionalmente) e chamar os métodos de desenho e atualização, `Particula.desenha()` e `Particula.anda()` respectivamente.
 
 ```pde
-particula Particula; // variável global para uma particula
+Particula particula; // variável global para uma particula
 
 void setup() {
   /* define área de desenho e popula lista de particulas */
   size(100, 100);  // área de desenho
+  background(0);
   float meia_largura = width / 2;
   float meia_altura = height / 2;
-  Particula = new Particula(meia_largura, meia_altura, 50);
+  particula = new Particula(meia_largura, meia_altura, 5);
 }
 
 void draw() {
-  /* Limpa a tela, desenha e atualiza particulas */
-  background(0);  // atualização do desenho, fundo preto
-  Particula.desenha();
-  Particula.anda();
+  /* Limpa a tela (opcional), desenha e atualiza particulas */
+  // background(0);  // limpa a tela com fundo preto
+  particula.desenha();
+  particula.anda();
 }
 
-class particula {
+class Particula {
   /* Classe particula */
   float x, y, tamanho;
-  particula(float px, float py, float ptamanho) {
+  Particula(float px, float py, float ptamanho) {
     x = px;
     y = py;
     tamanho = ptamanho;
@@ -84,7 +91,7 @@ class particula {
     if (x > width + 25) x = -25;
     if (y > height + 25) y = -25;
     if (x < -25) x = width + 25;
-   if (y < -25) y = height + 25;
+    if (y < -25) y = height + 25;
   }
 }
 ```

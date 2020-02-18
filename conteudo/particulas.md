@@ -1,7 +1,7 @@
 #  Orientação a objetos com caminhantes aleatórios
 
 Inspirado na introdução à simulações físicas apresentada por Daniel Shiffman em *Nature of Code*, 
-este tutorial que se desenvolve  em etapas  serão introduz alguns conceitos de orientação a objetos: Classe, atributos de dados e métodos, instâncias e encapsulamento.
+neste tutorial que se desenvolve  em etapas, serão introduz alguns conceitos de Programação Orientada a Objetos (POO): classe, atributos de dados e métodos, instâncias e encapsulamento.
 
 Não serão abordadas as questões de herança e composição. Para poder aproveitar o exemplo sugerimos que você revise antes o seguinte vocabulário e algumas ideias de programação:
 

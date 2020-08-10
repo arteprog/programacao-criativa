@@ -108,7 +108,8 @@ void salvaSVG(File selection) {
 
 void keyPressed() {
   if (key == 's') {
-    selectOutput("Salvar:", "salvaSVG");
+    File sugestao = new File("exemplo.svg");
+    selectOutput("Salvar:", "salvaSVG", sugestao);
   }
 }
 ```

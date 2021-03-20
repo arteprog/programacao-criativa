@@ -113,21 +113,22 @@ PImage img;
 PImage imgTemp;
 
 void setup() {
-  size(800, 400);
+  size(100, 100);
   img = loadImage("monica.jpg");
   imgTemp = img.get();
+  surface.setSize(img.width * 2, img.height);
+  text("aguarde...", 20, 20);
+  noLoop();
 }
-
 void draw() {
-  scale(2);
-  image(img,0,0);
-  image(imgTemp, img.width, 0);
+  //scale(0.5);
+
   for (int i = 0; i <imgTemp.pixels.length; i++) {
     float record = -1; 
     int selectedPixel = i; 
     for (int j = i; j < imgTemp.pixels.length; j++) {
       color pix   = imgTemp.pixels[j]; 
-      float b = hue(pix); 
+      float b = brightness(pix); 
       if (b > record) {
         selectedPixel = j; 
         record = b;
@@ -138,7 +139,10 @@ void draw() {
     imgTemp.pixels[selectedPixel] = cor;
   }
   imgTemp.updatePixels();
+  image(img, 0, 0);
+  image(imgTemp, img.width, 0);
 }
+
 ```
 
 ![](https://github.com/arteprog/programacao-criativa/blob/master/assets/imagens/pixe02.png?raw=true)

@@ -121,8 +121,6 @@ void setup() {
   noLoop();
 }
 void draw() {
-  //scale(0.5);
-
   for (int i = 0; i <imgTemp.pixels.length; i++) {
     float record = -1; 
     int selectedPixel = i; 

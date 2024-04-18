@@ -54,7 +54,7 @@ O curso introdutório Programação Criativa, visa promover a familiarização d
 ### Materiais abertos em português
 
 - BERRUEZO, Mateus; [*O código transcendente*](https://codigotranscendente.github.io/livro/), 2020
-- [Material do Prof. Ranoya (UFPE)](https://www.ranoya.com/aulas/designgenerativo/playgroundDocs/introProcessing.php?theme=dgen&elementos=processing)
+- [O código Processing[(https://www.ranoya.com/books/public/processing/), [Guia de programação em Processing](https://www.ranoya.com/aulas/designgenerativo/playgroundDocs/introProcessing.php?theme=dgen&elementos=processing) e [Aulas de Processing em vídeo](https://www.youtube.com/watch?v=iWtdcmcD8qM&list=PLtqMZvORRX52bzxeoZ1QyqJIhR3EuU41R) do Prof. Guilherme Ranoya (UFPE).
 - AMADO, Pedro; [*Introdução à programação gráfica (usando Processing)*](https://repositorio-aberto.up.pt/handle/10216/1848), 2007 
 - Prof. Merkle (UTFPR) fez a [Tradução da referência da linguagem versão 1.0](http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html)
 - Ajude a traduzir mais coisas! Projeto [Processando-Processing](https://github.com/arteprog/Processando-Processing)
